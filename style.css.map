@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_base/_base.scss",
+        "_base/_variables.scss",
+        "_base/_reset.scss",
+        "_base/_mixin.scss",
+        "_interface/_interface.scss",
+        "_layout/_layout.scss",
+        "_modules/_modules.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

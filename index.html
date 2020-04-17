@@ -13,27 +13,29 @@
 <body>
 
     <nav class="nav">
-        <ul class="nav-list">
-            <a href="recettes.html" class="nav-lien">
-                <li class="nav-item">Recettes</li>
-            </a>
-            <a href="mets_vins.html" class="nav-lien">
-                <li class="nav-item">Accords mets-vins</li>
-            </a>
-            <a href="mets_bieres.html" class="nav-lien">
-                <li class="nav-item">Accords mets-bières</li>
-            </a>
-            <a href="foodtrutter.html" class="nav-lien">
-                <li class="nav-item">Foodtrutter</li>
-            </a>
-            <a href="coup_de_food.html" class="nav-lien">
-                <li class="nav-item">Coups de food</li>
-            </a>
-            <a href="art_de_recevoir.html" class="nav-lien">
-                <li class="nav-item">Art de recevoir</li>
-            </a>
-        </ul>
-        <div class="icone-menuMobile"><a href="#"><i class="fas fa-hamburger"></i></a></div>
+        <nav class="nav-wrapper nav-close">
+            <ul class="nav-list">
+                <a href="recettes.html" class="nav-lien">
+                    <li class="nav-item">Recettes</li>
+                </a>
+                <a href="mets_vins.html" class="nav-lien">
+                    <li class="nav-item">Accords mets-vins</li>
+                </a>
+                <a href="mets_bieres.html" class="nav-lien">
+                    <li class="nav-item">Accords mets-bières</li>
+                </a>
+                <a href="foodtrutter.html" class="nav-lien">
+                    <li class="nav-item">Foodtrutter</li>
+                </a>
+                <a href="coup_de_food.html" class="nav-lien">
+                    <li class="nav-item">Coups de food</li>
+                </a>
+                <a href="art_de_recevoir.html" class="nav-lien">
+                    <li class="nav-item">Art de recevoir</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="icone-menuMobile"><a href="#"><i class="fas fa-bars menu-bars"></i></a></div>
     </nav>
 
     <header>
@@ -115,6 +117,26 @@
     <footer>
         <p class="copyright">©CSTJ | Techniques d'intégration multimédia 2020 - Travail de mi-session</p>
     </footer>
+
+
+    <!------------------- JQUERY -------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!------- MENU HAMBURGER ------->
+    <script>
+        $(function() {
+            $('.menu-bars').click(function() {
+                $('.nav-wrapper').toggleClass('nav-close');
+            });
+
+
+            $('.nav-item').click(function() {
+                $('.nav-wrapper').toggleClass('nav-close');
+            });
+        });
+    </script>
+    
+        <!------------------- JQUERY -------------------->
     
 </body>
 </html>

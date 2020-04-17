@@ -5,10 +5,45 @@
 //----------------------------------------------------//
 
 .nav {
+    z-index: 19999;
     background-color: var(--noir);
     
-    & .nav-item {
-        color: white;
+    & .nav-wrapper {
+        width: 60vw;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: hidden;
+        white-space: nowrap;
+
+        & .nav-list {
+            width: 100%;
+
+            & .nav-item {
+                color: #fff;
+        
+                &:hover {
+                    color: var(--orange);
+                }
+            }
+        }
+        
+    }
+
+    & .nav-wrapper.nav-close {
+        width: 0;
+    }
+    
+    & .icone-menuMobile {
+        position: relative;
+
+        & .menu-bars {
+            position: absolute;
+            z-index: 200000;
+            font-size: 2rem;
+            bottom: 2.8rem;
+            right: 3rem;
+            color: #fff;
+        }
     }
 }
 

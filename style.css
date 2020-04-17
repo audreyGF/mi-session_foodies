@@ -178,7 +178,7 @@ header .logo-mobile {
   padding-top: 0.8em;
 }
 
-.interface .recette-wrapper {
+.recette-wrapper {
   width: 60vw;
   padding-top: 2em;
   margin: 0 auto;
@@ -191,7 +191,7 @@ header .logo-mobile {
           flex-flow: column nowrap;
 }
 
-.interface .recette-wrapper .recette-list .recette {
+.recette-wrapper .recette-list .recette {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 4em;
@@ -206,12 +206,12 @@ header .logo-mobile {
           flex-flow: column nowrap;
 }
 
-.interface .recette-wrapper .recette-list .recette .recette-image {
+.recette-wrapper .recette-list .recette .recette-image {
   width: 100%;
   margin: 0 auto;
 }
 
-.interface .recette-wrapper .recette-list .recette .recette-titre {
+.recette-wrapper .recette-list .recette .recette-titre {
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -219,7 +219,7 @@ header .logo-mobile {
   padding-bottom: 1em;
 }
 
-.interface .recette-wrapper .recette-list .recette .recette-p {
+.recette-wrapper .recette-list .recette .recette-p {
   font-size: 0.75rem;
   line-height: 1.25rem;
   text-align: justify;
@@ -227,7 +227,7 @@ header .logo-mobile {
   padding-bottom: 0.5em;
 }
 
-.interface .recette-wrapper .recette-list .recette .recette-bt {
+.recette-wrapper .recette-list .recette .recette-bt {
   width: 200px;
   margin: 1rem;
   padding: 0.9em;

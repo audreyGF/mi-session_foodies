@@ -7,6 +7,7 @@
 .interface {
     overflow: hidden;
     display: flex;
+    justify-content: flex-end;
     background-color: #fff;
 
     .nav {

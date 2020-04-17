@@ -5,6 +5,8 @@
 }
 
 html {
+  width: 100vw;
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -32,15 +34,35 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.nav {
+  background-color: var(--noir);
+}
+
+.nav-item {
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url("_assets/_images/entete-640.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.logo-mobile {
+  display: none;
+}
+
 .interface {
   position: relative;
-  margin: 4em auto;
+  margin: 0 auto;
   background-color: #fff;
 }
 
 .wrap-collab {
   position: relative;
-  bottom: 5.5em;
+  bottom: 1.5em;
   padding: 1em 0;
   width: 50vw;
   margin: 0 auto;
@@ -57,23 +79,23 @@ body {
   color: #fff;
 }
 
-header {
-  width: 100%;
-  height: 50vh;
-  background-image: url("_assets/_images/entete-640.jpg");
-  background-size: cover;
-  background-position: top;
-}
-
-.logo-mobile {
+.img-auteur {
   display: none;
 }
 
-.nav {
-  background-color: var(--noir);
+.wrap-nom-auteur {
+  width: 5em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
-.nav-item {
-  color: white;
+.auteur-prenom {
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

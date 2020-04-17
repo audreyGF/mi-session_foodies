@@ -47,14 +47,14 @@
         text-align: center;
         
         & .titre-article {
-            font-size: 1.9em;
+            font-size: 1.9rem;
             font-weight: 100;
         }
 
         & .titre-section {
             padding-top: 0.8em;
             color: var(--gris);
-            font-size: 1em;
+            font-size: 1rem;
             font-weight: 700;
         }
     }
@@ -64,11 +64,28 @@
         margin: 0 auto;
         padding: 2.5em 0;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         font-weight: 900;
         font-style: italic;
     }
-    
+
+    & .paragraph {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 1.5em 0;
+
+        & .soustitre {
+            padding-bottom: 0.4em;
+            font-size: 1.2rem;
+            text-align: left;
+            color: var(--orange);
+        }
+
+        & > p {
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+        }
+    }
 }
 
 

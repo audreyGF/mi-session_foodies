@@ -38,7 +38,7 @@ body {
   background-color: var(--noir);
 }
 
-.nav-item {
+.nav .nav-item {
   color: white;
 }
 

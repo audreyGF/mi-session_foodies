@@ -1,9 +1,9 @@
 .nav {
     background-color: var(--noir);
     
+    & .nav-item {
+        color: white;
+    }
 }
 
 
-.nav-item {
-    color: white;
-}

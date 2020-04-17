@@ -5,8 +5,9 @@ header {
     background-image: url('_assets/_images/entete-640.jpg');
     background-size: cover;
     background-position: top;
+
+    & .logo-mobile {
+        display: none;
+    }
 }
 
-.logo-mobile {
-    display: none;
-}

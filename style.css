@@ -50,7 +50,7 @@ header {
   background-position: top;
 }
 
-.logo-mobile {
+header .logo-mobile {
   display: none;
 }
 

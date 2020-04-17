@@ -52,4 +52,12 @@ li {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.nav {
+  background-color: var(--noir);
+}
+
+.nav-item {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

@@ -257,4 +257,8 @@ header .logo-mobile {
   color: #fff;
   text-align: center;
 }
+
+.pub-desktop {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

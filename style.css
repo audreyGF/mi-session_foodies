@@ -79,23 +79,37 @@ header .logo-mobile {
   color: #fff;
 }
 
-.interface .img-auteur {
+.interface .wrap-auteur {
+  width: 100vw;
+  margin: 0 auto;
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.interface .wrap-auteur .img-auteur {
   display: none;
 }
 
-.interface .wrap-nom-auteur {
-  width: 5em;
+.interface .wrap-auteur .wrap-nom-auteur {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 0.79em;
 }
 
-.interface .wrap-nom-auteur .auteur-prenom {
-  font-weight: 300;
+.interface .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+  padding-right: 0.5em;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

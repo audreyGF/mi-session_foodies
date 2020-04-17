@@ -18,21 +18,31 @@
             color: #fff;
         }
     }
-
-    & .img-auteur {
-        display: none;
-    }
-
-    & .wrap-nom-auteur {
-        width: 5em;
+ 
+    & .wrap-auteur {
+        width: 100vw;
         margin: 0 auto;
+        padding-top: 2em;
         display: flex;
-        flex-flow: row nowrap;
+        flex-direction: row;
+
+        & .img-auteur {
+            display: none;
+        }
     
-        & .auteur-prenom {
-            font-weight: 300;
+        & .wrap-nom-auteur {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            font-size: 0.79em;
+
+            & .auteur-prenom {
+                padding-right: 0.5em;
+                font-weight: 700;
+            }
         }
     }
+    
 }
 
 

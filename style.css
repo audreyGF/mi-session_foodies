@@ -93,15 +93,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interface .bande-menu .icone-menuMobile {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
 }
 
 .interface .bande-menu .icone-menuMobile .menu-bars {
+  position: absolute;
+  top: -20px;
+  left: 100px;
   z-index: 200000;
-  padding-right: 1.2em;
-  padding-top: 0.6em;
   font-size: 2rem;
   color: #fff;
 }
@@ -115,7 +123,7 @@ header {
 }
 
 header .logo-mobile {
-  display: none;
+  width: 100px;
 }
 
 .contenu-page .wrap-collab {

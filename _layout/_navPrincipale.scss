@@ -50,14 +50,17 @@
         height: 70px;
         background-color: var(--noir);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         
         & .icone-menuMobile {
+            align-self: center;
+            position: relative;
 
             & .menu-bars {
+                position: absolute;
+                top: -20px;
+                left: 100px;
                 z-index: 200000;
-                padding-right: 1.2em;
-                padding-top: 0.6em;
                 font-size: 2rem;
                 color: #fff;
             }

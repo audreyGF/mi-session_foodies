@@ -1,0 +1,16 @@
+
+footer {
+    width: 100vw;
+    height: 100%;
+    padding: 2.5em 0;
+    background-color: var(--noir);
+
+    & .copyright {
+        width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        color: #fff;
+    }
+}

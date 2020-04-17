@@ -35,12 +35,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.nav {
+.interface {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.interface .nav {
   z-index: 19999;
   background-color: var(--noir);
 }
 
-.nav .nav-wrapper {
+.interface .nav .nav-wrapper {
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,32 +63,32 @@ body {
   white-space: nowrap;
 }
 
-.nav .nav-wrapper .nav-list {
+.interface .nav .nav-wrapper .nav-list {
   width: 100%;
 }
 
-.nav .nav-wrapper .nav-list .nav-item {
+.interface .nav .nav-wrapper .nav-list .nav-item {
   color: #fff;
 }
 
-.nav .nav-wrapper .nav-list .nav-item:hover {
+.interface .nav .nav-wrapper .nav-list .nav-item:hover {
   color: var(--orange);
 }
 
-.nav .nav-wrapper.nav-close {
+.interface .nav .nav-wrapper.nav-close {
   width: 0;
 }
 
-.nav .icone-menuMobile {
+.interface .nav .icone-menuMobile {
   position: relative;
 }
 
-.nav .icone-menuMobile .menu-bars {
+.interface .nav .icone-menuMobile .menu-bars {
   position: absolute;
   z-index: 200000;
   font-size: 2rem;
-  bottom: 2.8rem;
-  right: 3rem;
+  bottom: 1rem;
+  right: 1rem;
   color: #fff;
 }
 
@@ -95,13 +105,11 @@ header .logo-mobile {
   display: none;
 }
 
-.interface {
-  position: relative;
-  margin: 0 auto;
-  background-color: #fff;
+.contenu-page {
+  width: 100%;
 }
 
-.interface .wrap-collab {
+.contenu-page .wrap-collab {
   position: relative;
   bottom: 1.5em;
   padding: 1em 0;
@@ -116,11 +124,11 @@ header .logo-mobile {
   background-color: var(--vert);
 }
 
-.interface .wrap-collab .collab {
+.contenu-page .wrap-collab .collab {
   color: #fff;
 }
 
-.interface .wrap-auteur {
+.contenu-page .wrap-auteur {
   width: 100vw;
   margin: 0 auto;
   padding: 2em 0 0.5em 0;
@@ -133,11 +141,11 @@ header .logo-mobile {
           flex-direction: row;
 }
 
-.interface .wrap-auteur .img-auteur {
+.contenu-page .wrap-auteur .img-auteur {
   display: none;
 }
 
-.interface .wrap-auteur .wrap-nom-auteur {
+.contenu-page .wrap-auteur .wrap-nom-auteur {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,28 +157,28 @@ header .logo-mobile {
   font-size: 0.79em;
 }
 
-.interface .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+.contenu-page .wrap-auteur .wrap-nom-auteur .auteur-prenom {
   padding-right: 0.5em;
   font-weight: 700;
 }
 
-.interface .zone-titre {
+.contenu-page .zone-titre {
   text-align: center;
 }
 
-.interface .zone-titre .titre-article {
+.contenu-page .zone-titre .titre-article {
   font-size: 1.9rem;
   font-weight: 100;
 }
 
-.interface .zone-titre .titre-section {
+.contenu-page .zone-titre .titre-section {
   padding-top: 0.8em;
   color: var(--gris);
   font-size: 1rem;
   font-weight: 700;
 }
 
-.interface .citation {
+.contenu-page .citation {
   width: 60vw;
   margin: 0 auto;
   padding: 2.5em 0;
@@ -180,38 +188,38 @@ header .logo-mobile {
   font-style: italic;
 }
 
-.interface .paragraph {
+.contenu-page .paragraph {
   width: 80vw;
   margin: 0 auto;
   padding: 1.5em 0;
 }
 
-.interface .paragraph .soustitre {
+.contenu-page .paragraph .soustitre {
   padding-bottom: 0.4em;
   font-size: 1.2rem;
   text-align: left;
   color: var(--orange);
 }
 
-.interface .paragraph > p {
+.contenu-page .paragraph > p {
   text-align: justify;
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
 
-.interface .paragraph .paragraph-img {
+.contenu-page .paragraph .paragraph-img {
   padding: 1em 0;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.interface .paragraph .paragraph-img .img-cuisine {
+.contenu-page .paragraph .paragraph-img .img-cuisine {
   display: block;
   width: 100%;
   margin: 0 -30%;
 }
 
-.interface .paragraph .paragraph-img figcaption {
+.contenu-page .paragraph .paragraph-img figcaption {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;

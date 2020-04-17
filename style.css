@@ -129,4 +129,14 @@ header .logo-mobile {
   font-size: 1em;
   font-weight: 700;
 }
+
+.interface .citation {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2.5em 0;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 900;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

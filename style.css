@@ -60,7 +60,7 @@ header {
   background-color: #fff;
 }
 
-.wrap-collab {
+.interface .wrap-collab {
   position: relative;
   bottom: 1.5em;
   padding: 1em 0;
@@ -75,15 +75,15 @@ header {
   background-color: var(--vert);
 }
 
-.collab {
+.interface .wrap-collab .collab {
   color: #fff;
 }
 
-.img-auteur {
+.interface .img-auteur {
   display: none;
 }
 
-.wrap-nom-auteur {
+.interface .wrap-nom-auteur {
   width: 5em;
   margin: 0 auto;
   display: -webkit-box;
@@ -95,7 +95,7 @@ header {
           flex-flow: row nowrap;
 }
 
-.auteur-prenom {
+.interface .wrap-nom-auteur .auteur-prenom {
   font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

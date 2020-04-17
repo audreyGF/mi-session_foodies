@@ -116,17 +116,21 @@
         & .recette-list{
 
             & .recette {
+                width: 80%;
+                margin: 0 auto;
                 padding-bottom: 4em;
                 display: flex;
+                align-content: center;
                 flex-flow: column nowrap;
 
                 & .recette-image {
-                    width: 70%;
+                    width: 100%;
                     margin: 0 auto;
                 }
                 & .recette-titre {
                     text-align: center;
                     font-size: 1rem;
+                    line-height: 1.5rem;
                     padding-top: 1.5em;
                     padding-bottom: 1em;
                 }

@@ -1,0 +1,15 @@
+
+.pub-mobile {
+    margin: 2rem 0;
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .texte-pub-mobile {
+        color: #fff;
+        text-align: center;
+    }
+}

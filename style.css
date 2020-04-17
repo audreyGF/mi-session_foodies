@@ -158,4 +158,25 @@ header .logo-mobile {
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
+
+.pub-mobile {
+  margin: 2rem 0;
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--gris);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pub-mobile .texte-pub-mobile {
+  color: #fff;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

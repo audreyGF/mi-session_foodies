@@ -50,6 +50,11 @@
                 border-radius: 1em;
                 color: #fff;
                 background-color: var(--vert);
+
+                &:hover, :active  {
+                    background-color: var(--vert-fonce);
+                    cursor: pointer; 
+                }
             }
 
         }

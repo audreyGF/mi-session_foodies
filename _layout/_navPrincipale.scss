@@ -4,66 +4,59 @@
 //                     _navPrincipale.scss            //
 //----------------------------------------------------//
 
-.interface {
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--blanc);
-
-    .nav {
-        z-index: 19999;
-        background-color: var(--noir);
-        position: fixed;
-        height: 100vh;
-        
-        & .nav-wrapper {
-            width: 300px;
-            transition: width 1s;
-            margin-top: 4rem;
-            height: 100%;
+.nav {
+    z-index: 19999;
+    background-color: var(--noir);
+    position: fixed;
+    height: 100vh;
     
-            & .nav-list {
-                display: flex;
-                flex-flow: column nowrap;
-                white-space: nowrap;
-                height: 100%;
-                
-                & .nav-lien {
-                    padding-left: 2em;
-                    
-                    & .nav-item {
-                        padding: 0.7em 0 0.7em 1em;
-                        font-size: 1.3rem;
-                        font-weight: 100;
-                        color: var(--blanc);
-                    }
-                }
+    & .nav-wrapper {
+        width: 300px;
+        transition: width 1s;
+        margin-top: 4rem;
+        height: 100%;
 
-                & .nav-selected{
-                    width: 85%;
-                    background-color: var(--orange);
-                }
+        & .nav-list {
+            display: flex;
+            flex-flow: column nowrap;
+            white-space: nowrap;
+            height: 100%;
+            
+            & .nav-lien {
+                padding-left: 2em;
                 
+                & .nav-item {
+                    padding: 0.7em 0 0.7em 1em;
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    color: var(--blanc);
+                }
             }
 
+            & .nav-selected{
+                width: 85%;
+                background-color: var(--orange);
+            }
+            
         }
-    
-        & .nav-wrapper.nav-close {
-            width: 0;
-        }
+
     }
 
-    & .menu-bars {
-        position: absolute;
-        z-index: 200000;
-        position: fixed;
-        right: 40px;
-        top: 18px;
-        font-size: 2rem;
-        color: var(--blanc);
+    & .nav-wrapper.nav-close {
+        width: 0;
     }
-    
 }
+
+.menu-bars {
+    position: absolute;
+    z-index: 200000;
+    position: fixed;
+    right: 40px;
+    top: 18px;
+    font-size: 2rem;
+    color: var(--blanc);
+}
+    
 
 
 

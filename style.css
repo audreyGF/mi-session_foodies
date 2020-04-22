@@ -47,17 +47,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: var(--blanc);
 }
 
-.interface .nav {
+.nav {
   z-index: 19999;
   background-color: var(--noir);
   position: fixed;
   height: 100vh;
 }
 
-.interface .nav .nav-wrapper {
+.nav .nav-wrapper {
   width: 300px;
   -webkit-transition: width 1s;
   transition: width 1s;
@@ -65,7 +64,7 @@ body {
   height: 100%;
 }
 
-.interface .nav .nav-wrapper .nav-list {
+.nav .nav-wrapper .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,27 +76,27 @@ body {
   height: 100%;
 }
 
-.interface .nav .nav-wrapper .nav-list .nav-lien {
+.nav .nav-wrapper .nav-list .nav-lien {
   padding-left: 2em;
 }
 
-.interface .nav .nav-wrapper .nav-list .nav-lien .nav-item {
+.nav .nav-wrapper .nav-list .nav-lien .nav-item {
   padding: 0.7em 0 0.7em 1em;
   font-size: 1.3rem;
   font-weight: 100;
   color: var(--blanc);
 }
 
-.interface .nav .nav-wrapper .nav-list .nav-selected {
+.nav .nav-wrapper .nav-list .nav-selected {
   width: 85%;
   background-color: var(--orange);
 }
 
-.interface .nav .nav-wrapper.nav-close {
+.nav .nav-wrapper.nav-close {
   width: 0;
 }
 
-.interface .menu-bars {
+.menu-bars {
   position: absolute;
   z-index: 200000;
   position: fixed;
@@ -144,27 +143,26 @@ header {
   width: 100%;
 }
 
-.contenu-page .wrap-collab {
+.contenu-page .contenu-article {
+  background-color: var(--blanc);
+}
+
+.contenu-page .contenu-article .wrap-collab {
   position: relative;
+  width: 50vw;
   max-width: 300px;
   bottom: 1.5em;
   padding: 1em 0;
-  width: 50vw;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: var(--vert);
 }
 
-.contenu-page .wrap-collab .collab {
+.contenu-page .contenu-article .wrap-collab .collab {
+  text-align: center;
   color: var(--blanc);
 }
 
-.contenu-page .wrap-auteur {
+.contenu-page .contenu-article .wrap-auteur {
   width: 100vw;
   margin: 0 auto;
   padding: 2em 0 0.5em 0;
@@ -177,11 +175,11 @@ header {
           flex-direction: row;
 }
 
-.contenu-page .wrap-auteur .img-auteur {
+.contenu-page .contenu-article .wrap-auteur .img-auteur {
   display: none;
 }
 
-.contenu-page .wrap-auteur .wrap-nom-auteur {
+.contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,30 +191,30 @@ header {
   font-size: 0.79em;
 }
 
-.contenu-page .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+.contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur .auteur-prenom {
   padding-right: 0.5em;
   font-weight: 700;
 }
 
-.contenu-page .zone-titre {
+.contenu-page .contenu-article .zone-titre {
   width: 20em;
   margin: 0 auto;
   text-align: center;
 }
 
-.contenu-page .zone-titre .titre-article {
+.contenu-page .contenu-article .zone-titre .titre-article {
   font-size: 2rem;
   font-weight: 100;
 }
 
-.contenu-page .zone-titre .titre-section {
+.contenu-page .contenu-article .zone-titre .titre-section {
   padding-top: 0.8em;
   color: var(--gris);
   font-size: 1rem;
   font-weight: 700;
 }
 
-.contenu-page .citation {
+.contenu-page .contenu-article .citation {
   width: 60vw;
   margin: 0 auto;
   padding: 2.5em 0;
@@ -226,13 +224,13 @@ header {
   font-style: italic;
 }
 
-.contenu-page .paragraph {
+.contenu-page .contenu-article .paragraph {
   width: 80vw;
   margin: 0 auto;
   padding: 1.5em 0;
 }
 
-.contenu-page .paragraph .soustitre {
+.contenu-page .contenu-article .paragraph .soustitre {
   padding-bottom: 0.4em;
   font-size: 1.2rem;
   font-weight: 500;
@@ -240,13 +238,13 @@ header {
   color: var(--orange);
 }
 
-.contenu-page .paragraph > p {
+.contenu-page .contenu-article .paragraph > p {
   text-align: justify;
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
 
-.contenu-page .paragraph .paragraph-img-align {
+.contenu-page .contenu-article .paragraph .paragraph-img-align {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,19 +257,36 @@ header {
           align-items: center;
 }
 
-.contenu-page .paragraph .paragraph-img-align .paragraph-img {
+.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img {
   padding: 1em 0;
 }
 
-.contenu-page .paragraph .paragraph-img-align .paragraph-img .img-cuisine {
+.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img .img-cuisine {
   width: 80vw;
   max-width: 500px;
 }
 
-.contenu-page .paragraph .paragraph-img-align .paragraph-img figcaption {
+.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img figcaption {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-article {
+    position: relative;
+    width: 85vw;
+    margin: 0 auto;
+    top: -120px;
+    background-color: #2a7099 !important;
+  }
+  .contenu-article .wrap-collab {
+    position: fixed;
+    bottom: -30px;
+  }
+  .contenu-article .wrap-collab .collab {
+    text-align: left;
+  }
 }
 
 .recette-wrapper {
@@ -351,7 +366,6 @@ header {
 
 .pub-mobile {
   margin: 2rem 0;
-  width: 100vw;
   height: 10rem;
   background-color: var(--gris);
   display: -webkit-box;

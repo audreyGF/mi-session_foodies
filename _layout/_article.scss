@@ -7,117 +7,144 @@
 .contenu-page {
     width: 100%;
     
-    & .wrap-collab {
-        position: relative; 
-        max-width: 300px;
-        bottom: 1.5em;
-        padding: 1em 0;
-        width: 50vw;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        background-color: var(--vert);
+    & .contenu-article {
+        background-color: var(--blanc);
 
-        & .collab {
-            color: var(--blanc);
-        }
-    }
- 
-    & .wrap-auteur {
-        width: 100vw;
-        margin: 0 auto;
-        padding: 2em 0 0.5em 0;
-        display: flex;
-        flex-direction: row;
-
-        & .img-auteur {
-            display: none;
-        }
-    
-        & .wrap-nom-auteur {
+        & .wrap-collab {
+            position: relative; 
+            width: 50vw;
+            max-width: 300px;
+            bottom: 1.5em;
+            padding: 1em 0;
             margin: 0 auto;
+            background-color: var(--vert);
+    
+            & .collab {
+                text-align: center;
+                color: var(--blanc);
+            }
+        }
+     
+        & .wrap-auteur {
+            width: 100vw;
+            margin: 0 auto;
+            padding: 2em 0 0.5em 0;
             display: flex;
             flex-direction: row;
-            font-size: 0.79em;
-
-            & .auteur-prenom {
-                padding-right: 0.5em;
+    
+            & .img-auteur {
+                display: none;
+            }
+        
+            & .wrap-nom-auteur {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                font-size: 0.79em;
+    
+                & .auteur-prenom {
+                    padding-right: 0.5em;
+                    font-weight: 700;
+                }
+            }
+        }
+    
+        & .zone-titre {
+            width: 20em;
+            margin: 0 auto;
+            text-align: center;
+            
+            & .titre-article {
+                font-size: 2rem;
+                font-weight: 100;
+            }
+    
+            & .titre-section {
+                padding-top: 0.8em;
+                color: var(--gris);
+                font-size: 1rem;
                 font-weight: 700;
             }
         }
-    }
-
-    & .zone-titre {
-        width: 20em;
-        margin: 0 auto;
-        text-align: center;
-        
-        & .titre-article {
-            font-size: 2rem;
-            font-weight: 100;
-        }
-
-        & .titre-section {
-            padding-top: 0.8em;
-            color: var(--gris);
-            font-size: 1rem;
-            font-weight: 700;
-        }
-    }
-
-    & .citation {
-        width: 60vw;
-        margin: 0 auto;
-        padding: 2.5em 0;
-        text-align: center;
-        font-size: 0.8rem;
-        font-weight: 400;
-        font-style: italic;
-    }
-
-    & .paragraph {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 1.5em 0;
-
-        & .soustitre {
-            padding-bottom: 0.4em;
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-align: left;
-            color: var(--orange);
-        }
-
-        & > p {
-            text-align: justify;
-            font-size: 0.85rem;
-            line-height: 1.25rem;
-        }
-
-        & .paragraph-img-align {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-
-            & .paragraph-img {
-                padding: 1em 0;
-
-                & .img-cuisine {
-                    width: 80vw;
-                    max-width: 500px;
-                }
     
-                & figcaption {
-                    font-size: 0.75rem;
-                    font-style: italic;
-                    padding-top: 0.8em;
+        & .citation {
+            width: 60vw;
+            margin: 0 auto;
+            padding: 2.5em 0;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+    
+        & .paragraph {
+            width: 80vw;
+            margin: 0 auto;
+            padding: 1.5em 0;
+    
+            & .soustitre {
+                padding-bottom: 0.4em;
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: left;
+                color: var(--orange);
+            }
+    
+            & > p {
+                text-align: justify;
+                font-size: 0.85rem;
+                line-height: 1.25rem;
+            }
+    
+            & .paragraph-img-align {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+    
+                & .paragraph-img {
+                    padding: 1em 0;
+    
+                    & .img-cuisine {
+                        width: 80vw;
+                        max-width: 500px;
+                    }
+        
+                    & figcaption {
+                        font-size: 0.75rem;
+                        font-style: italic;
+                        padding-top: 0.8em;
+                    }
                 }
             }
         }
-        
     }
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// BREAKPOINTS
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@media only screen and (min-width: 768px) {
+    .contenu-article {
+        position: relative;
+        width: 85vw;
+        margin: 0 auto;
+        top: -120px;
+        background-color: rgb(42, 112, 153) !important;
+        
+
+        & .wrap-collab {
+            position: fixed;
+            bottom: -30px;
+
+            & .collab {
+                text-align: left;
+            }
+        }
+    }
+
+    
+}
 
 
 

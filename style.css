@@ -59,6 +59,13 @@ body {
 
 .interface .nav .nav-wrapper {
   width: 300px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  margin-top: 4rem;
+  height: 100%;
+}
+
+.interface .nav .nav-wrapper .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,22 +73,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  overflow: hidden;
   white-space: nowrap;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  height: 100%;
 }
 
-.interface .nav .nav-wrapper .nav-list {
-  width: 100%;
-  padding: 4em 0 0 2em;
+.interface .nav .nav-wrapper .nav-list .nav-lien {
+  padding-left: 2em;
 }
 
-.interface .nav .nav-wrapper .nav-list .nav-item {
-  padding: 0.5em 0;
+.interface .nav .nav-wrapper .nav-list .nav-lien .nav-item {
+  padding: 0.7em 0 0.7em 1em;
   font-size: 1.3rem;
   font-weight: 100;
   color: var(--blanc);
+}
+
+.interface .nav .nav-wrapper .nav-list .nav-selected {
+  width: 85%;
+  background-color: var(--orange);
 }
 
 .interface .nav .nav-wrapper.nav-close {

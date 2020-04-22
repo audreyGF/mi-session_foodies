@@ -18,30 +18,39 @@
         
         & .nav-wrapper {
             width: 300px;
-            display: flex;
-            flex-flow: column nowrap;
-            overflow: hidden;
-            white-space: nowrap;
             transition: width 1s;
+            margin-top: 4rem;
+            height: 100%;
     
             & .nav-list {
-                width: 100%;
-                padding: 4em 0 0 2em;
-    
-                & .nav-item {
-                    padding: 0.5em 0;
-                    font-size: 1.3rem;
-                    font-weight: 100;
-                    color: var(--blanc);
+                display: flex;
+                flex-flow: column nowrap;
+                white-space: nowrap;
+                height: 100%;
+                
+                & .nav-lien {
+                    padding-left: 2em;
+                    
+                    & .nav-item {
+                        padding: 0.7em 0 0.7em 1em;
+                        font-size: 1.3rem;
+                        font-weight: 100;
+                        color: var(--blanc);
+                    }
                 }
+
+                & .nav-selected{
+                    width: 85%;
+                    background-color: var(--orange);
+                }
+                
             }
-            
+
         }
     
         & .nav-wrapper.nav-close {
             width: 0;
         }
-        
     }
 
     & .menu-bars {

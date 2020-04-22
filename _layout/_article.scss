@@ -48,10 +48,12 @@
     }
 
     & .zone-titre {
+        width: 20em;
+        margin: 0 auto;
         text-align: center;
         
         & .titre-article {
-            font-size: 1.9rem;
+            font-size: 2rem;
             font-weight: 100;
         }
 
@@ -69,7 +71,7 @@
         padding: 2.5em 0;
         text-align: center;
         font-size: 0.8rem;
-        font-weight: 900;
+        font-weight: 400;
         font-style: italic;
     }
 
@@ -81,6 +83,7 @@
         & .soustitre {
             padding-bottom: 0.4em;
             font-size: 1.2rem;
+            font-weight: 500;
             text-align: left;
             color: var(--orange);
         }
@@ -91,23 +94,26 @@
             line-height: 1.25rem;
         }
 
-        & .paragraph-img {
-            padding: 1em 0;
-            margin: 0 auto;
-            overflow:hidden;
+        & .paragraph-img-align {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
 
-            & .img-cuisine {
-                display:block; 
-                width:100%; 
-                margin:0 -30%;
-            }
+            & .paragraph-img {
+                padding: 1em 0;
 
-            & figcaption {
-                font-size: 0.75rem;
-                font-style: italic;
-                padding-top: 0.8em;
+                & .img-cuisine {
+                    width: 80vw;
+                }
+    
+                & figcaption {
+                    font-size: 0.75rem;
+                    font-style: italic;
+                    padding-top: 0.8em;
+                }
             }
         }
+        
     }
 }
 

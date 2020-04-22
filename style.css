@@ -183,11 +183,13 @@ header {
 }
 
 .contenu-page .zone-titre {
+  width: 20em;
+  margin: 0 auto;
   text-align: center;
 }
 
 .contenu-page .zone-titre .titre-article {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -204,7 +206,7 @@ header {
   padding: 2.5em 0;
   text-align: center;
   font-size: 0.8rem;
-  font-weight: 900;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -217,6 +219,7 @@ header {
 .contenu-page .paragraph .soustitre {
   padding-bottom: 0.4em;
   font-size: 1.2rem;
+  font-weight: 500;
   text-align: left;
   color: var(--orange);
 }
@@ -227,26 +230,35 @@ header {
   line-height: 1.25rem;
 }
 
-.contenu-page .paragraph .paragraph-img {
+.contenu-page .paragraph .paragraph-img-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenu-page .paragraph .paragraph-img-align .paragraph-img {
   padding: 1em 0;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
-.contenu-page .paragraph .paragraph-img .img-cuisine {
-  display: block;
-  width: 100%;
-  margin: 0 -30%;
+.contenu-page .paragraph .paragraph-img-align .paragraph-img .img-cuisine {
+  width: 80vw;
 }
 
-.contenu-page .paragraph .paragraph-img figcaption {
+.contenu-page .paragraph .paragraph-img-align .paragraph-img figcaption {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;
 }
 
 .recette-wrapper {
-  width: 60vw;
+  width: 80vw;
   padding-top: 2em;
   margin: 0 auto;
   display: -webkit-box;
@@ -280,14 +292,14 @@ header {
 
 .recette-wrapper .recette-list .recette .recette-titre {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding-top: 1.5em;
   padding-bottom: 1em;
 }
 
 .recette-wrapper .recette-list .recette .recette-p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.25rem;
   text-align: justify;
   text-align-last: center;
@@ -302,16 +314,11 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
-  border-radius: 1em;
+  border-radius: 0.6em;
   color: var(--blanc);
   background-color: var(--vert);
-}
-
-.recette-wrapper .recette-list .recette .recette-bt:hover, .recette-wrapper .recette-list .recette .recette-bt :active {
-  background-color: var(--vert-fonce);
-  cursor: pointer;
 }
 
 .pub-mobile {
@@ -350,7 +357,7 @@ footer .copyright {
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.3rem;
   color: var(--blanc);
 }

@@ -5,7 +5,7 @@
 //----------------------------------------------------//
 
 .recette-wrapper {
-    width: 60vw;
+    width: 80vw;
     padding-top: 2em;
     margin: 0 auto;
     display: flex;
@@ -27,13 +27,13 @@
             }
             & .recette-titre {
                 text-align: center;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 line-height: 1.5rem;
                 padding-top: 1.5em;
                 padding-bottom: 1em;
             }
             & .recette-p {
-                font-size: 0.75rem;
+                font-size: 0.85rem;
                 line-height: 1.25rem;
                 text-align: justify;
                 text-align-last: center;
@@ -45,16 +45,12 @@
                 padding: 0.9em;
                 align-self: center;
                 font-size: 1rem;
-                font-weight: bold;
+                font-weight: 700;
                 border: none;
-                border-radius: 1em;
+                border-radius: 0.6em;
                 color: var(--blanc);
                 background-color: var(--vert);
 
-                &:hover, :active  {
-                    background-color: var(--vert-fonce);
-                    cursor: pointer; 
-                }
             }
 
         }

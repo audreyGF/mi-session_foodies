@@ -37,7 +37,7 @@
             </section>
 
             <div class="zone-titre">
-                <h2 class="titre-article">Le potluck, recevoir sans<br>se casser la tête</h2>
+                <h2 class="titre-article">Le potluck, recevoir sans se casser la tête</h2>
                 <h3 class="titre-section">Art de recevoir</h3>
             </div>
 
@@ -52,10 +52,15 @@
 
             <div class="paragraph">
                 <h4 class="soustitre">Du bonheur à partager en famille et entre amis</h4>
-                <figure class="paragraph-img">
-                    <img srcset="_assets/_images/cuisine-400.jpg 400w, _assets/_images/cuisine-715.jpg 715w " sizes=" (min-width:768px) 50vw, (min-width:1366px) 50vw, (min-width:1600px) 45vw" src="_assets/_images/cuisine-400.jpg" alt="cuisine original" class="img-cuisine">
-                    <figcaption>Photo de Josh Frenette</figcaption>
-                </figure>
+                <div class="paragraph-img-align">
+                    <figure class="paragraph-img">
+                        <picture>
+                            <source media="(min-width: 1366px)" srcset="_assets/_images/cuisine-715.jpg">
+                            <img src="_assets/_images/cuisine-400.jpg" alt="Préparation d'un potluck" class="img-cuisine">
+                        </picture>
+                        <figcaption>Photo de Josh Frenette</figcaption>
+                    </figure>
+                </div>
                 <p>Integer tristique magna eu neque convallis, a efficitur ipsum rutrum. Vivamus bibendum lobortis orci, a dictum diam semper id. Etiam scelerisque, dolor at ultrices porttitor, nibh nisl laoreet lorem, ac pharetra diam justo non magna. Sed nec varius lorem, non rhoncus lacus. Aliquam tristique sodales tortor vitae euismod. Quisque pulvinar orci purus, eget vulputate erat feugiat a. Mauris rhoncus tristique ornare. Vivamus pulvinar lacinia velit eu sagittis.</p>
             </div>
 
@@ -144,7 +149,6 @@
             $('.menu-bars').click(function() {
                 $('.nav-wrapper').toggleClass('nav-close');
             });
-
 
             $('.nav-item').click(function() {
                 $('.nav-wrapper').toggleClass('nav-close');

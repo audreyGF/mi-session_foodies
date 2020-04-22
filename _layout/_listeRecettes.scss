@@ -21,6 +21,7 @@
             align-content: center;
             flex-flow: column nowrap;
 
+
             & .recette-image {
                 width: 100%;
                 margin: 0 auto;
@@ -53,6 +54,16 @@
 
             }
 
+        }
+        & .recette:nth-of-type(1)::after, .recette:nth-of-type(2)::after  {
+            content:"";
+            display: inline-block;
+            height: 0.5em;
+            vertical-align: bottom;
+            width: 100%;
+            margin-top: 3rem;
+            margin-right: -100%;
+            border-top: 1px solid var(--gris);
         }
     }
 }

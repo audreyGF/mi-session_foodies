@@ -134,6 +134,12 @@ header {
   width: 100px;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    height: 30rem;
+  }
+}
+
 .contenu-page {
   width: 100%;
 }

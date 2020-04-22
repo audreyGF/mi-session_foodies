@@ -27,3 +27,8 @@ header {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    //Version tablette
+    header {height: 30rem;}
+
+}

@@ -373,7 +373,7 @@ header {
 
 .pub-mobile {
   margin: 2rem 0;
-  height: 10rem;
+  height: 190px;
   background-color: var(--gris);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,6 +393,15 @@ header {
 
 .pub-desktop {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .pub-mobile {
+    margin: 2rem auto;
+    padding: 2em 0 2em 0;
+    width: 80%;
+    max-width: 800px;
+  }
 }
 
 footer {

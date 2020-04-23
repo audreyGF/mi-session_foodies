@@ -39,7 +39,7 @@
                 padding-left: 2em;
 
                 @include breakpoint(1366){
-                    padding: 0;
+                    padding: 0.58em;
                     align-self: center;
                 }
                 
@@ -56,6 +56,17 @@
                         
                     }
                 
+                }
+
+            }
+
+            @include breakpoint(1366) {
+                & .nav-lien:hover {
+                    background-color: var(--gris-fonce);
+                    transition: all 0.5s;
+                }
+                & .nav-lien:active {
+                    background-color: var(--orange);
                 }
             }
 

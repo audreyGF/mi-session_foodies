@@ -5,6 +5,7 @@
   --vert: #bac373;
   --vert-fonce: #98a154;
   --gris: #999999;
+  --gris-fonce: #3d312b;
   --blanc: #fff;
 }
 
@@ -120,7 +121,7 @@ html body li {
 
 @media only screen and (min-width: 1366px) {
   .nav .nav-wrapper .nav-list .nav-lien {
-    padding: 0;
+    padding: 0.58em;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -139,6 +140,17 @@ html body li {
     font-size: 1rem;
     font-weight: 500;
     padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper .nav-list .nav-lien:hover {
+    background-color: var(--gris-fonce);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .nav .nav-wrapper .nav-list .nav-lien:active {
+    background-color: var(--orange);
   }
 }
 
@@ -788,6 +800,18 @@ header .logo-desktop {
     width: 170px;
     font-size: 0.9rem;
     margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .info-recettes .recette-bt:hover {
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .recette-wrapper .recette-list .recette .info-recettes .recette-bt:active {
+    background-color: var(--gris);
   }
 }
 

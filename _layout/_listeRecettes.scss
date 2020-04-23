@@ -120,6 +120,16 @@
                         margin: 1rem 0;
                     }
                 }
+
+                @include breakpoint(1366){
+                    & .recette-bt:hover {
+                        filter: brightness(90%);
+                        transition: 0.3s;
+                    }
+                    & .recette-bt:active {
+                        background-color: var(--gris);
+                    }
+                }
     
             }
             

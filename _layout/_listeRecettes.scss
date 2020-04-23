@@ -7,10 +7,23 @@
 .recette-wrapper {
     padding-top: 2em;
 
+    & .ligne-recette{
+        width: 90%;
+        margin: 3rem auto;
+        height: 0.05rem;
+        background-color: var(--gris);
+    }
+
     & .recette-list {
         width: 80vw;
         margin: 0 auto;
         @include flex-vertical;
+        @include breakpoint(768){
+            width: 80vw;
+            @include flex-horizontal;
+            justify-content: center;
+        }
+
 
         & .recette {
             width: 80%;
@@ -18,6 +31,10 @@
             padding-bottom: 4em;
             @include flex-vertical;
             align-content: center;
+
+            @include breakpoint(768){
+                padding: 0 1em;
+            }
 
 
             & .recette-image {
@@ -62,29 +79,11 @@
             margin-top: 3rem;
             margin-right: -100%;
             border-top: 1px solid var(--gris);
+
+            @include breakpoint(768){
+                display: none;
+            }
+            
         }
     }
-}
-
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// BREAKPOINTS
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-@media only screen and (min-width: 768px) {
-    //Version tablette
-    // .recette-list {
-    //     width: 10vw;
-    //     display: flex;
-    //     flex-flow: row nowrap;
-
-    //     & > .recette {
-    //         width: 10vw;
-    //         & .recette-image {
-    //             width: 20%;
-    //             margin: 0 auto;
-    //         }
-    //     }
-    // }
-
 }

@@ -419,15 +419,6 @@ header {
           justify-content: center;
 }
 
-.pub-mobile .texte-pub-mobile {
-  color: var(--blanc);
-  text-align: center;
-}
-
-.pub-desktop {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   .pub-mobile {
     margin: 2rem auto;
@@ -435,6 +426,15 @@ header {
     width: 80%;
     max-width: 800px;
   }
+}
+
+.pub-mobile .texte-pub-mobile {
+  color: var(--blanc);
+  text-align: center;
+}
+
+.pub-desktop {
+  display: none;
 }
 
 footer {

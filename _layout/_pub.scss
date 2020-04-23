@@ -12,6 +12,13 @@
     align-items: center;
     justify-content: center;
 
+    @include breakpoint(768){
+        margin: 2rem auto;
+        padding: 2em 0 2em 0;
+        width: 80%;
+        max-width: 800px;
+    }
+
     & .texte-pub-mobile {
         color: var(--blanc);
         text-align: center;
@@ -20,20 +27,4 @@
 
 .pub-desktop {
     display: none;
-}
-
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// BREAKPOINTS
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-@media only screen and (min-width: 768px) {
-    //Version tablette
-    .pub-mobile {
-        margin: 2rem auto;
-        padding: 2em 0 2em 0;
-        width: 80%;
-        max-width: 800px;
-    }
-
 }

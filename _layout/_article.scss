@@ -64,6 +64,9 @@
                 margin: 0 auto;
                 @include flex-horizontal;
                 font-size: 0.79em;
+                @include breakpoint(768){
+                    font-size: 0.9em; 
+                }
     
                 & .auteur-prenom {
                     padding-right: 0.5em;
@@ -82,11 +85,12 @@
             }
             
             & .titre-article {
-                @include breakpoint(768){
-                    font-size: 2.8rem;
-                }
                 font-size: 2rem;
                 font-weight: 100;
+                @include breakpoint(768){
+                    font-size: 2.8rem;
+                    width: 500px;
+                }
             }
     
             & .titre-section {
@@ -105,12 +109,21 @@
             font-size: 0.8rem;
             font-weight: 400;
             font-style: italic;
+
+            @include breakpoint(768){
+                max-width: 465px;
+                font-size: 0.9rem;
+            }
         }
     
         & .paragraph {
             width: 80vw;
             margin: 0 auto;
             padding: 1.5em 0;
+
+            @include breakpoint(768){
+                width: 80%;
+            }
     
             & .soustitre {
                 padding-bottom: 0.4em;
@@ -118,12 +131,21 @@
                 font-weight: 500;
                 text-align: left;
                 color: var(--orange);
+
+                @include breakpoint(768){
+                    font-size: 1.4rem;
+                }
             }
     
             & > p {
                 text-align: justify;
                 font-size: 0.85rem;
                 line-height: 1.25rem;
+
+                @include breakpoint(768){
+                    font-size: 1.05rem;
+                    line-height: 1.5rem;
+                }
             }
     
             & .paragraph-img-align {

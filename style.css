@@ -228,6 +228,12 @@ header {
   font-size: 0.79em;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur {
+    font-size: 0.9em;
+  }
+}
+
 .contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur .auteur-prenom {
   padding-right: 0.5em;
   font-weight: 700;
@@ -254,6 +260,7 @@ header {
 @media only screen and (min-width: 768px) {
   .contenu-page .contenu-article .zone-titre .titre-article {
     font-size: 2.8rem;
+    width: 500px;
   }
 }
 
@@ -274,10 +281,23 @@ header {
   font-style: italic;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .citation {
+    max-width: 465px;
+    font-size: 0.9rem;
+  }
+}
+
 .contenu-page .contenu-article .paragraph {
   width: 80vw;
   margin: 0 auto;
   padding: 1.5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .paragraph {
+    width: 80%;
+  }
 }
 
 .contenu-page .contenu-article .paragraph .soustitre {
@@ -288,10 +308,23 @@ header {
   color: var(--orange);
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .paragraph .soustitre {
+    font-size: 1.4rem;
+  }
+}
+
 .contenu-page .contenu-article .paragraph > p {
   text-align: justify;
   font-size: 0.85rem;
   line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .paragraph > p {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+  }
 }
 
 .contenu-page .contenu-article .paragraph .paragraph-img-align {

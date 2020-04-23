@@ -287,6 +287,13 @@ header {
   .contenu-article .wrap-collab .collab {
     text-align: left;
   }
+  .contenu-article .zone-article {
+    width: 60em;
+  }
+  .contenu-article .titre-article {
+    font-size: 6rem;
+    text-align: left;
+  }
 }
 
 .recette-wrapper {

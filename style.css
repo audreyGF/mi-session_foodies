@@ -120,6 +120,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  header {
+    height: 45rem;
+  }
+}
+
 .bande-menu {
   z-index: 10000;
   position: fixed;
@@ -141,6 +147,12 @@ header {
 .bande-menu .logo-mobile {
   padding-top: 3px;
   width: 100px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .bande-menu .logo-mobile {
+    display: none;
+  }
 }
 
 .contenu-page {

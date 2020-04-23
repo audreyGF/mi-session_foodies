@@ -418,7 +418,7 @@ header .logo-desktop {
 }
 
 .contenu-page .contenu-article .article-flex-desktop .paragraph .soustitre {
-  padding-bottom: 0.4em;
+  padding-bottom: 0.6em;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: left;
@@ -427,7 +427,7 @@ header .logo-desktop {
 
 @media only screen and (min-width: 768px) {
   .contenu-page .contenu-article .article-flex-desktop .paragraph .soustitre {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -435,12 +435,13 @@ header .logo-desktop {
   text-align: justify;
   font-size: 0.85rem;
   line-height: 1.25rem;
+  font-weight: 100;
 }
 
 @media only screen and (min-width: 768px) {
   .contenu-page .contenu-article .article-flex-desktop .paragraph > p {
-    font-size: 1.05rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -591,6 +592,23 @@ header .logo-desktop {
   padding-top: 2em;
 }
 
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 3rem;
+  }
+}
+
 .recette-wrapper .ligne-recette {
   width: 90%;
   margin: 3rem auto;
@@ -632,8 +650,23 @@ header .logo-desktop {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .recette-wrapper .recette-list .recette {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 4em;
   display: -webkit-box;
@@ -653,12 +686,39 @@ header .logo-desktop {
   }
 }
 
-.recette-wrapper .recette-list .recette .recette-image {
-  width: 100%;
-  margin: 0 auto;
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5rem;
+  }
 }
 
-.recette-wrapper .recette-list .recette .recette-titre {
+.recette-wrapper .recette-list .recette .recette-image {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .recette-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .info-recettes {
+    margin-left: 1rem;
+  }
+}
+
+.recette-wrapper .recette-list .recette .info-recettes .recette-titre {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -666,15 +726,34 @@ header .logo-desktop {
   padding-bottom: 1em;
 }
 
-.recette-wrapper .recette-list .recette .recette-p {
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .info-recettes .recette-titre {
+    font-size: 1.3rem;
+    text-align: left;
+    text-align-last: left;
+  }
+}
+
+.recette-wrapper .recette-list .recette .info-recettes .recette-p {
   font-size: 0.85rem;
+  font-weight: 100;
   line-height: 1.25rem;
   text-align: justify;
   text-align-last: center;
   padding-bottom: 0.5em;
 }
 
-.recette-wrapper .recette-list .recette .recette-bt {
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .info-recettes .recette-p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    text-align: left;
+    text-align-last: left;
+  }
+}
+
+.recette-wrapper .recette-list .recette .info-recettes .recette-bt {
   width: 200px;
   margin: 1rem;
   padding: 0.9em;
@@ -687,6 +766,14 @@ header .logo-desktop {
   border-radius: 0.6em;
   color: var(--blanc);
   background-color: var(--vert);
+}
+
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .recette-list .recette .info-recettes .recette-bt {
+    width: 170px;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
 }
 
 .recette-wrapper .recette-list .recette:nth-of-type(1)::after, .recette-wrapper .recette-list .recette:nth-of-type(2)::after {

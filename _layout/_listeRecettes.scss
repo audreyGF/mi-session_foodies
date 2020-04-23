@@ -7,6 +7,13 @@
 .recette-wrapper {
     padding-top: 2em;
 
+    @include breakpoint(1366){
+        width: 100%;
+        @include flex-horizontal;
+        justify-content: flex-start;
+        margin-left: 3rem;
+    }
+
     & .ligne-recette{
         width: 90%;
         margin: 3rem auto;
@@ -28,10 +35,14 @@
             @include flex-horizontal;
             justify-content: center;
         }
+        @include breakpoint(1366){
+            @include flex-vertical;
+            align-items: flex-start;
+        }
 
 
         & .recette {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             padding-bottom: 4em;
             @include flex-vertical;
@@ -41,39 +52,78 @@
                 padding: 0 1em;
             }
 
+            @include breakpoint(1366){
+                @include flex-horizontal;
+                justify-content: center;
+                margin-bottom: 5rem;
+            }
 
             & .recette-image {
                 width: 100%;
-                margin: 0 auto;
-            }
-            & .recette-titre {
-                text-align: center;
-                font-size: 1.1rem;
-                line-height: 1.5rem;
-                padding-top: 1.5em;
-                padding-bottom: 1em;
-            }
-            & .recette-p {
-                font-size: 0.85rem;
-                line-height: 1.25rem;
-                text-align: justify;
-                text-align-last: center;
-                padding-bottom: 0.5em;
-            }
-            & .recette-bt {
-                width: 200px;
-                margin: 1rem;
-                padding: 0.9em;
-                align-self: center;
-                font-size: 1rem;
-                font-weight: 700;
-                border: none;
-                border-radius: 0.6em;
-                color: var(--blanc);
-                background-color: var(--vert);
 
+                @include breakpoint(1366){
+                    width: 100%;  
+                    
+                }
             }
 
+            & .info-recettes {
+
+                @include breakpoint(1366){
+                    margin-left: 1rem;
+                    
+                }
+
+                & .recette-titre {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    padding-top: 1.5em;
+                    padding-bottom: 1em;
+                    @include breakpoint(1366){
+                        font-size: 1.3rem;
+                        text-align: left;
+                        text-align-last: left;
+                    }
+                    
+                }
+                & .recette-p {
+                    font-size: 0.85rem;
+                    font-weight: 100;
+                    line-height: 1.25rem;
+                    text-align: justify;
+                    text-align-last: center;
+                    padding-bottom: 0.5em;
+
+                    @include breakpoint(1366){
+                        width: 100%;
+                        font-size: 1rem;
+                        line-height: 1.7rem;
+                        text-align: left;
+                        text-align-last: left;
+                    }
+                }
+                & .recette-bt {
+                    width: 200px;
+                    margin: 1rem;
+                    padding: 0.9em;
+                    align-self: center;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 0.6em;
+                    color: var(--blanc);
+                    background-color: var(--vert);
+                    
+                    @include breakpoint(1366){
+                        width: 170px;
+                        font-size: 0.9rem;
+                        margin: 1rem 0;
+                    }
+                }
+    
+            }
+            
         }
         & .recette:nth-of-type(1)::after, .recette:nth-of-type(2)::after  {
             content:"";

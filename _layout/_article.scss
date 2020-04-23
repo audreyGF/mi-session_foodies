@@ -138,14 +138,14 @@
                 }
         
                 & .soustitre {
-                    padding-bottom: 0.4em;
+                    padding-bottom: 0.6em;
                     font-size: 1.2rem;
                     font-weight: 500;
                     text-align: left;
                     color: var(--orange);
     
                     @include breakpoint(768){
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                     }
                 }
         
@@ -153,10 +153,11 @@
                     text-align: justify;
                     font-size: 0.85rem;
                     line-height: 1.25rem;
+                    font-weight: 100;
     
                     @include breakpoint(768){
-                        font-size: 1.05rem;
-                        line-height: 1.5rem;
+                        font-size: 1.1rem;
+                        line-height: 1.8rem;
                     }
                 }
         

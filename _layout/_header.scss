@@ -13,9 +13,23 @@ header {
 
     @include breakpoint(768) {
         height: 30rem;
+        background-image: url('_assets/_images/entete-960.jpg');
     }
     @include breakpoint(1366) {
         height: 45rem;
+        background-image: url('_assets/_images/entete-1200.jpg');
+    }
+
+    & .logo-desktop{
+        display: none;
+        @include breakpoint(1366) {
+            display: block;
+            position: relative;
+            top: 8em;
+            width: 40%;
+            margin: 0 auto;
+        }
+
     }
 }
 

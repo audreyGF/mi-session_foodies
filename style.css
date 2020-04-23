@@ -188,12 +188,28 @@ header {
 @media only screen and (min-width: 768px) {
   header {
     height: 30rem;
+    background-image: url("_assets/_images/entete-960.jpg");
   }
 }
 
 @media only screen and (min-width: 1366px) {
   header {
     height: 45rem;
+    background-image: url("_assets/_images/entete-1200.jpg");
+  }
+}
+
+header .logo-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  header .logo-desktop {
+    display: block;
+    position: relative;
+    top: 8em;
+    width: 40%;
+    margin: 0 auto;
   }
 }
 

@@ -6,6 +6,10 @@
 
 .interface {
     overflow: hidden;
-    display: flex;
+    @include flex-horizontal;
     justify-content: flex-end;
+
+    @include breakpoint(1366) {
+        justify-content: center;
+    }
 }

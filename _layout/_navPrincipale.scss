@@ -9,6 +9,12 @@
     background-color: var(--noir);
     position: fixed;
     height: 100vh;
+
+    @include breakpoint(1366){
+        background-color: transparent;
+        height: 70.5px;
+    }
+
     
     & .nav-wrapper {
         width: 300px;
@@ -16,25 +22,49 @@
         margin-top: 4rem;
         height: 100%;
 
+        @include breakpoint(1366){
+            margin: 0;
+        }
+
         & .nav-list {
             @include flex-vertical;
             white-space: nowrap;
             height: 100%;
+
+            @include breakpoint(1366){
+                @include flex-horizontal;
+            }
             
             & .nav-lien {
                 padding-left: 2em;
+
+                @include breakpoint(1366){
+                    padding: 0;
+                    align-self: center;
+                }
                 
                 & .nav-item {
                     padding: 0.7em 0 0.7em 1em;
                     font-size: 1.3rem;
                     font-weight: 100;
                     color: var(--blanc);
+
+                    @include breakpoint(1366){
+                        font-weight: 500;
+                        padding: 1em;
+                        
+                    }
+                
                 }
             }
 
             & .nav-selected{
                 width: 85%;
                 background-color: var(--orange);
+
+                @include breakpoint(1366){
+                    height: 100%;
+                }
             }
             
         }
@@ -43,6 +73,10 @@
 
     & .nav-wrapper.nav-close {
         width: 0;
+
+        @include breakpoint(1366){
+            width: 100%;
+        }
     }
 }
 
@@ -54,6 +88,10 @@
     top: 18px;
     font-size: 2rem;
     color: var(--blanc);
+
+    @include breakpoint(1366) {
+        display: none;
+    }
 }
     
 

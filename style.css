@@ -44,9 +44,21 @@ html body li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1366px) {
+  .interface {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .nav {
@@ -56,12 +68,25 @@ html body li {
   height: 100vh;
 }
 
+@media only screen and (min-width: 1366px) {
+  .nav {
+    background-color: transparent;
+    height: 70.5px;
+  }
+}
+
 .nav .nav-wrapper {
   width: 300px;
   -webkit-transition: width 1s;
   transition: width 1s;
   margin-top: 4rem;
   height: 100%;
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper {
+    margin: 0;
+  }
 }
 
 .nav .nav-wrapper .nav-list {
@@ -76,8 +101,29 @@ html body li {
   height: 100%;
 }
 
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
 .nav .nav-wrapper .nav-list .nav-lien {
   padding-left: 2em;
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper .nav-list .nav-lien {
+    padding: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .nav .nav-wrapper .nav-list .nav-lien .nav-item {
@@ -87,13 +133,32 @@ html body li {
   color: var(--blanc);
 }
 
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper .nav-list .nav-lien .nav-item {
+    font-weight: 500;
+    padding: 1em;
+  }
+}
+
 .nav .nav-wrapper .nav-list .nav-selected {
   width: 85%;
   background-color: var(--orange);
 }
 
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper .nav-list .nav-selected {
+    height: 100%;
+  }
+}
+
 .nav .nav-wrapper.nav-close {
   width: 0;
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav .nav-wrapper.nav-close {
+    width: 100%;
+  }
 }
 
 .menu-bars {
@@ -104,6 +169,12 @@ html body li {
   top: 18px;
   font-size: 2rem;
   color: var(--blanc);
+}
+
+@media only screen and (min-width: 1366px) {
+  .menu-bars {
+    display: none;
+  }
 }
 
 header {

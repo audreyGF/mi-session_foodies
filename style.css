@@ -512,6 +512,12 @@ footer {
   background-color: var(--noir);
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 1.7em 0;
+  }
+}
+
 footer .copyright {
   width: 280px;
   margin: 0 auto;
@@ -519,5 +525,12 @@ footer .copyright {
   font-size: 0.9rem;
   line-height: 1.3rem;
   color: var(--blanc);
+}
+
+@media only screen and (min-width: 768px) {
+  footer .copyright {
+    width: 100%;
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

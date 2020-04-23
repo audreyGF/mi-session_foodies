@@ -26,5 +26,9 @@ footer {
             width: 100%;
             font-size: 1.3rem;
         }
+        @include breakpoint(1366){
+            width: 100%;
+            font-size: 1rem;
+        }
     }
 }

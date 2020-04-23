@@ -22,7 +22,9 @@
             justify-content: center;
             flex-wrap: wrap;
             margin: 0 auto;
-            max-width: 1500px;
+            width: 75vw;
+            max-width: 75vw;
+            top: -200px;
         }
 
         & .wrap-collab {
@@ -44,7 +46,8 @@
             @include breakpoint(1366){
                 width: 90%;
                 max-width: 90%;
-                margin-bottom: 4rem;
+                padding: 1em 0;
+                margin: 1rem 0 4rem 0;
                 flex-basis: 100%;
             }
     
@@ -58,36 +61,43 @@
                 }
 
                 @include breakpoint(1366){
-                    width: 90%;
-                    max-width: 90%;
-                    flex-basis: 100%;
-                    width: 100%;
-                    font-size: 1.4rem;
+                     font-size: 1.4rem;
                 }
         
             }
         }
 
-        & .article-flex-desktop{
-            @include breakpoint(1366){
-                width: 60%;
+        & .article-flex-desktop {
+
+            @include breakpoint(1366) {
+                width: 65%;
+                margin-top: 3rem;
             }
         
             & .zone-titre {
                 width: 20em;
                 margin: 0 auto;
                 text-align: center;
+
                 @include breakpoint(768){
                     width: 80%;
                     text-align: left;
+                }
+                @include breakpoint(1366){
+                    width: 80%;
                 }
                 
                 & .titre-article {
                     font-size: 2rem;
                     font-weight: 100;
+
                     @include breakpoint(768){
                         font-size: 2.8rem;
                         width: 500px;
+                    }
+                    @include breakpoint(1366){
+                        font-size: 3.2rem;
+                        width: 11em;
                     }
                 }
         
@@ -96,6 +106,10 @@
                     color: var(--gris);
                     font-size: 1rem;
                     font-weight: 700;
+
+                    @include breakpoint(1366){
+                        font-size: 1.5rem;
+                    }
                 }
             }
         

@@ -16,7 +16,7 @@ header {
         background-image: url('_assets/_images/entete-960.jpg');
     }
     @include breakpoint(1366) {
-        height: 45rem;
+        height: 50rem;
         background-image: url('_assets/_images/entete-1200.jpg');
     }
 

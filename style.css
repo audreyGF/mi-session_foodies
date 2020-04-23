@@ -136,7 +136,7 @@ html body li {
 
 @media only screen and (min-width: 1366px) {
   .nav .nav-wrapper .nav-list .nav-lien .nav-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     padding: 1em;
   }
@@ -149,7 +149,7 @@ html body li {
 
 @media only screen and (min-width: 1366px) {
   .nav .nav-wrapper .nav-list .nav-selected {
-    height: 100%;
+    padding: 0.58em;
   }
 }
 
@@ -196,7 +196,7 @@ header {
 
 @media only screen and (min-width: 1366px) {
   header {
-    height: 45rem;
+    height: 50rem;
     background-image: url("_assets/_images/entete-1200.jpg");
   }
 }
@@ -276,7 +276,9 @@ header .logo-desktop {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1500px;
+    width: 75vw;
+    max-width: 75vw;
+    top: -200px;
   }
 }
 
@@ -303,7 +305,8 @@ header .logo-desktop {
   .contenu-page .contenu-article .wrap-collab {
     width: 90%;
     max-width: 90%;
-    margin-bottom: 4rem;
+    padding: 1em 0;
+    margin: 1rem 0 4rem 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -323,18 +326,14 @@ header .logo-desktop {
 
 @media only screen and (min-width: 1366px) {
   .contenu-page .contenu-article .wrap-collab .collab {
-    width: 90%;
-    max-width: 90%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    width: 100%;
     font-size: 1.4rem;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   .contenu-page .contenu-article .article-flex-desktop {
-    width: 60%;
+    width: 65%;
+    margin-top: 3rem;
   }
 }
 
@@ -351,6 +350,12 @@ header .logo-desktop {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .article-flex-desktop .zone-titre {
+    width: 80%;
+  }
+}
+
 .contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-article {
   font-size: 2rem;
   font-weight: 100;
@@ -363,11 +368,24 @@ header .logo-desktop {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-article {
+    font-size: 3.2rem;
+    width: 11em;
+  }
+}
+
 .contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-section {
   padding-top: 0.8em;
   color: var(--gris);
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-section {
+    font-size: 1.5rem;
+  }
 }
 
 .contenu-page .contenu-article .article-flex-desktop .citation {
@@ -770,6 +788,13 @@ footer .copyright {
   footer .copyright {
     width: 100%;
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  footer .copyright {
+    width: 100%;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,10 @@ header {
     background-image: url('_assets/_images/entete-640.jpg');
     background-size: cover;
     background-position: top;
+
+    @include breakpoint(768) {
+        height: 30rem;
+    }
 }
 
 .bande-menu {
@@ -25,15 +29,4 @@ header {
         padding-top: 3px;
         width: 100px;
     }
-}
-
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// BREAKPOINTS
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-@media only screen and (min-width: 768px) {
-    //Version tablette
-    header {height: 30rem;}
-
 }

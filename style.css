@@ -114,6 +114,12 @@ header {
   background-position: top;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    height: 30rem;
+  }
+}
+
 .bande-menu {
   z-index: 10000;
   position: fixed;
@@ -135,12 +141,6 @@ header {
 .bande-menu .logo-mobile {
   padding-top: 3px;
   width: 100px;
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    height: 30rem;
-  }
 }
 
 .contenu-page {

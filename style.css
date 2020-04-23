@@ -135,6 +135,7 @@ html body li {
 
 @media only screen and (min-width: 1366px) {
   .nav .nav-wrapper .nav-list .nav-lien .nav-item {
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 1em;
   }
@@ -259,6 +260,20 @@ header .logo-desktop {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .contenu-page .contenu-article .wrap-collab {
   position: relative;
   width: 50vw;
@@ -278,6 +293,14 @@ header .logo-desktop {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .wrap-collab {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
 .contenu-page .contenu-article .wrap-collab .collab {
   text-align: center;
   color: var(--blanc);
@@ -290,7 +313,13 @@ header .logo-desktop {
   }
 }
 
-.contenu-page .contenu-article .wrap-auteur {
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .article-flex-desktop {
+    width: 70%;
+  }
+}
+
+.contenu-page .contenu-article .article-flex-desktop .wrap-auteur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,18 +333,18 @@ header .logo-desktop {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .wrap-auteur {
+  .contenu-page .contenu-article .article-flex-desktop .wrap-auteur {
     width: 80%;
     margin-top: 2rem;
     display: block;
   }
 }
 
-.contenu-page .contenu-article .wrap-auteur .img-auteur {
+.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .img-auteur {
   display: none;
 }
 
-.contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur {
+.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,49 +357,49 @@ header .logo-desktop {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur {
+  .contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur {
     font-size: 0.9em;
   }
 }
 
-.contenu-page .contenu-article .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur .auteur-prenom {
   padding-right: 0.5em;
   font-weight: 700;
 }
 
-.contenu-page .contenu-article .zone-titre {
+.contenu-page .contenu-article .article-flex-desktop .zone-titre {
   width: 20em;
   margin: 0 auto;
   text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .zone-titre {
+  .contenu-page .contenu-article .article-flex-desktop .zone-titre {
     width: 80%;
     text-align: left;
   }
 }
 
-.contenu-page .contenu-article .zone-titre .titre-article {
+.contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-article {
   font-size: 2rem;
   font-weight: 100;
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .zone-titre .titre-article {
+  .contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-article {
     font-size: 2.8rem;
     width: 500px;
   }
 }
 
-.contenu-page .contenu-article .zone-titre .titre-section {
+.contenu-page .contenu-article .article-flex-desktop .zone-titre .titre-section {
   padding-top: 0.8em;
   color: var(--gris);
   font-size: 1rem;
   font-weight: 700;
 }
 
-.contenu-page .contenu-article .citation {
+.contenu-page .contenu-article .article-flex-desktop .citation {
   width: 60vw;
   margin: 0 auto;
   padding: 2.5em 0;
@@ -381,25 +410,25 @@ header .logo-desktop {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .citation {
+  .contenu-page .contenu-article .article-flex-desktop .citation {
     max-width: 465px;
     font-size: 0.9rem;
   }
 }
 
-.contenu-page .contenu-article .paragraph {
+.contenu-page .contenu-article .article-flex-desktop .paragraph {
   width: 80vw;
   margin: 0 auto;
   padding: 1.5em 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .paragraph {
+  .contenu-page .contenu-article .article-flex-desktop .paragraph {
     width: 80%;
   }
 }
 
-.contenu-page .contenu-article .paragraph .soustitre {
+.contenu-page .contenu-article .article-flex-desktop .paragraph .soustitre {
   padding-bottom: 0.4em;
   font-size: 1.2rem;
   font-weight: 500;
@@ -408,25 +437,25 @@ header .logo-desktop {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .paragraph .soustitre {
+  .contenu-page .contenu-article .article-flex-desktop .paragraph .soustitre {
     font-size: 1.4rem;
   }
 }
 
-.contenu-page .contenu-article .paragraph > p {
+.contenu-page .contenu-article .article-flex-desktop .paragraph > p {
   text-align: justify;
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .paragraph > p {
+  .contenu-page .contenu-article .article-flex-desktop .paragraph > p {
     font-size: 1.05rem;
     line-height: 1.5rem;
   }
 }
 
-.contenu-page .contenu-article .paragraph .paragraph-img-align {
+.contenu-page .contenu-article .article-flex-desktop .paragraph .paragraph-img-align {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,16 +468,16 @@ header .logo-desktop {
           align-items: center;
 }
 
-.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img {
+.contenu-page .contenu-article .article-flex-desktop .paragraph .paragraph-img-align .paragraph-img {
   padding: 1em 0;
 }
 
-.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img .img-cuisine {
+.contenu-page .contenu-article .article-flex-desktop .paragraph .paragraph-img-align .paragraph-img .img-cuisine {
   width: 80vw;
   max-width: 500px;
 }
 
-.contenu-page .contenu-article .paragraph .paragraph-img-align .paragraph-img figcaption {
+.contenu-page .contenu-article .article-flex-desktop .paragraph .paragraph-img-align .paragraph-img figcaption {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;
@@ -567,9 +596,7 @@ header .logo-desktop {
   }
 }
 
-.pub-mobile {
-  margin: 2rem 0;
-  height: 190px;
+.pub-basic, .pub-mobile, .pub-desktop .pub {
   background-color: var(--gris);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,6 +611,12 @@ header .logo-desktop {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: var(--blanc);
+}
+
+.pub-mobile {
+  margin: 2rem 0;
+  height: 190px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -595,13 +628,27 @@ header .logo-desktop {
   }
 }
 
-.pub-mobile .texte-pub-mobile {
-  color: var(--blanc);
-  text-align: center;
+@media only screen and (min-width: 1366px) {
+  .pub-mobile {
+    display: none;
+  }
 }
 
 .pub-desktop {
   display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  .pub-desktop {
+    display: block;
+    width: 30%;
+  }
+}
+
+.pub-desktop .pub {
+  margin: 1rem 0 1rem 0;
+  width: 200px;
+  height: 200px;
 }
 
 footer {

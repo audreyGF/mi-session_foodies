@@ -4,13 +4,19 @@
 //                      _pub.scss                     //
 //----------------------------------------------------//
 
-.pub-mobile {
-    margin: 2rem 0;
-    height: 190px;
+.pub-basic {
     background-color: var(--gris);
     @include flex-horizontal;
     align-items: center;
     justify-content: center;
+    color: var(--blanc);
+}
+
+
+.pub-mobile {
+    @extend .pub-basic;
+    margin: 2rem 0;
+    height: 190px;
 
     @include breakpoint(768){
         margin: 2rem auto;
@@ -19,12 +25,25 @@
         max-width: 800px;
     }
 
-    & .texte-pub-mobile {
-        color: var(--blanc);
-        text-align: center;
+    @include breakpoint(1366){
+        display: none;
     }
 }
 
 .pub-desktop {
     display: none;
+
+    @include breakpoint(1366){
+        display: block;
+        width: 30%;
+  
+    }
+    & .pub {
+        @extend .pub-basic;
+        margin: 1rem 0 1rem 0;
+        width: 200px;
+        height: 200px;
+        
+    }
+    
 }

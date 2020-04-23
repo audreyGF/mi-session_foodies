@@ -50,6 +50,7 @@
                     color: var(--blanc);
 
                     @include breakpoint(1366){
+                        font-size: 1.2rem;
                         font-weight: 500;
                         padding: 1em;
                         

@@ -287,7 +287,6 @@ header .logo-desktop {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto;
     width: 75vw;
     max-width: 75vw;
     top: -200px;

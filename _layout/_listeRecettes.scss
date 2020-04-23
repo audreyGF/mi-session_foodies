@@ -12,12 +12,17 @@
         margin: 3rem auto;
         height: 0.05rem;
         background-color: var(--gris);
+
+        @include breakpoint(1366){
+            display: none;
+        }
     }
 
     & .recette-list {
         width: 80vw;
         margin: 0 auto;
         @include flex-vertical;
+
         @include breakpoint(768){
             width: 80vw;
             @include flex-horizontal;

@@ -269,8 +269,13 @@ header .logo-desktop {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1500px;
   }
 }
 
@@ -295,9 +300,11 @@ header .logo-desktop {
 
 @media only screen and (min-width: 1366px) {
   .contenu-page .contenu-article .wrap-collab {
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 4rem;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    width: 100%;
   }
 }
 
@@ -310,6 +317,17 @@ header .logo-desktop {
   .contenu-page .contenu-article .wrap-collab .collab {
     padding-left: 1em;
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article .wrap-collab .collab {
+    width: 90%;
+    max-width: 90%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    font-size: 1.4rem;
   }
 }
 
@@ -494,6 +512,12 @@ header .logo-desktop {
   background-color: var(--gris);
 }
 
+@media only screen and (min-width: 1366px) {
+  .recette-wrapper .ligne-recette {
+    display: none;
+  }
+}
+
 .recette-wrapper .recette-list {
   width: 80vw;
   margin: 0 auto;
@@ -641,14 +665,16 @@ header .logo-desktop {
 @media only screen and (min-width: 1366px) {
   .pub-desktop {
     display: block;
-    width: 30%;
+    width: 25%;
   }
 }
 
 .pub-desktop .pub {
-  margin: 1rem 0 1rem 0;
-  width: 200px;
-  height: 200px;
+  margin: 1rem 0 1rem 2.4rem;
+  width: 100%;
+  max-width: 350px;
+  height: 720px;
+  font-size: 1.3rem;
 }
 
 footer {

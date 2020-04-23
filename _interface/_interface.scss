@@ -4,9 +4,13 @@
 //                     _interface.scss                //
 //----------------------------------------------------//
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Importation
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-@import '_grilleDesktop';
-@import'_interfaceMobile';
+.interface {
+    overflow: hidden;
+    @include flex-horizontal;
+    justify-content: flex-end;
+
+    @include breakpoint(1366) {
+        justify-content: center;
+    }
+}

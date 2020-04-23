@@ -19,7 +19,10 @@
 
         @include breakpoint(1366){
             @include flex-horizontal;
+            justify-content: center;
             flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1500px;
         }
 
         & .wrap-collab {
@@ -39,8 +42,10 @@
             }
 
             @include breakpoint(1366){
+                width: 90%;
+                max-width: 90%;
+                margin-bottom: 4rem;
                 flex-basis: 100%;
-                width: 100%;
             }
     
             & .collab {
@@ -51,12 +56,22 @@
                     padding-left: 1em;
                     text-align: left;
                 }
+
+                @include breakpoint(1366){
+                    width: 90%;
+                    max-width: 90%;
+                    flex-basis: 100%;
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+        
             }
         }
 
         & .article-flex-desktop{
             @include breakpoint(1366){
                 width: 70%;
+                
             }
 
             & .wrap-auteur {

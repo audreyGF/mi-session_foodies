@@ -35,13 +35,12 @@
 
     @include breakpoint(1366){
         display: block;
-        width: 25%;
     }
 
     & .pub {
         @extend .pub-basic;
-        margin: 1rem 0 1rem 2.4rem;
-        width: 100%;
+        margin-bottom: 4rem;
+        width: 14em;
         max-width: 350px;
         height: 720px;
         font-size: 1.3rem;

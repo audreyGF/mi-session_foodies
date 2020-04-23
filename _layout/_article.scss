@@ -70,39 +70,7 @@
 
         & .article-flex-desktop{
             @include breakpoint(1366){
-                width: 70%;
-                
-            }
-
-            & .wrap-auteur {
-                @include flex-horizontal;
-                width: 100vw;
-                margin: 0 auto;
-                padding: 2em 0 0.5em 0;
-    
-                @include breakpoint(768){
-                    width: 80%;
-                    margin-top: 2rem;
-                    display: block;
-                }
-        
-                & .img-auteur {
-                    display: none;
-                }
-            
-                & .wrap-nom-auteur {
-                    margin: 0 auto;
-                    @include flex-horizontal;
-                    font-size: 0.79em;
-                    @include breakpoint(768){
-                        font-size: 0.9em; 
-                    }
-        
-                    & .auteur-prenom {
-                        padding-right: 0.5em;
-                        font-weight: 700;
-                    }
-                }
+                width: 60%;
             }
         
             & .zone-titre {
@@ -200,6 +168,73 @@
             }
 
         }
+
+        aside {
+            width: 25%;
+            @include flex-vertical;
+            align-items: center;
+
+            & .wrap-auteur {
+                @include flex-horizontal;
+                width: 100vw;
+                margin: 0 auto;
+                padding: 2em 0 0.5em 0;
+    
+                @include breakpoint(768){
+                    width: 80%;
+                    flex-wrap: nowrap;
+                    margin-top: 2rem;
+                    display: block;
+                }
+
+                @include breakpoint(1366){
+                    width: 100%;
+                    @include flex-vertical;
+                    align-items: center;
+                    padding: 0;
+                    margin: 3rem 0;
+                }
+
+        
+                & .img-auteur {
+                    display: none;
+    
+                    @include breakpoint(1366){
+                        display: block;
+                        width: 80%;
+                        padding: 50px 10px 0 10px;
+                        border: 5px solid var(--orange-trans);
+                    }
+                }
+            
+                & .wrap-nom-auteur {
+                    margin: 0 auto;
+                    @include flex-horizontal;
+                    font-size: 0.79em;
+
+                    @include breakpoint(768){
+                        font-size: 0.9em; 
+                    }
+                    @include breakpoint(1366){
+                        @include flex-vertical;
+                        margin-top: 2rem;
+                        align-items: center;
+                        font-size: 1.4rem;
+                    }
+        
+                    & .auteur-prenom {
+                        padding-right: 0.5em;
+                        font-weight: 700;
+
+                        @include breakpoint(1366){
+                            font-size: 1.7rem;
+                            padding-bottom: 0.3em;
+                        }
+                    }
+                }
+            }
+        }
+        
         
     }
 }

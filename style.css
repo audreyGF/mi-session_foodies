@@ -1,5 +1,6 @@
 :root {
   --orange: #ff6c47;
+  --orange-trans: #ff6c4775;
   --noir: #000000;
   --vert: #bac373;
   --vert-fonce: #98a154;
@@ -333,56 +334,8 @@ header .logo-desktop {
 
 @media only screen and (min-width: 1366px) {
   .contenu-page .contenu-article .article-flex-desktop {
-    width: 70%;
+    width: 60%;
   }
-}
-
-.contenu-page .contenu-article .article-flex-desktop .wrap-auteur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 2em 0 0.5em 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .article-flex-desktop .wrap-auteur {
-    width: 80%;
-    margin-top: 2rem;
-    display: block;
-  }
-}
-
-.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .img-auteur {
-  display: none;
-}
-
-.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  font-size: 0.79em;
-}
-
-@media only screen and (min-width: 768px) {
-  .contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur {
-    font-size: 0.9em;
-  }
-}
-
-.contenu-page .contenu-article .article-flex-desktop .wrap-auteur .wrap-nom-auteur .auteur-prenom {
-  padding-right: 0.5em;
-  font-weight: 700;
 }
 
 .contenu-page .contenu-article .article-flex-desktop .zone-titre {
@@ -499,6 +452,121 @@ header .logo-desktop {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;
+}
+
+.contenu-page .contenu-article aside {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenu-page .contenu-article aside .wrap-auteur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2em 0 0.5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article aside .wrap-auteur {
+    width: 80%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 2rem;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article aside .wrap-auteur {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 3rem 0;
+  }
+}
+
+.contenu-page .contenu-article aside .wrap-auteur .img-auteur {
+  display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article aside .wrap-auteur .img-auteur {
+    display: block;
+    width: 80%;
+    padding: 50px 10px 0 10px;
+    border: 5px solid var(--orange-trans);
+  }
+}
+
+.contenu-page .contenu-article aside .wrap-auteur .wrap-nom-auteur {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-size: 0.79em;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article aside .wrap-auteur .wrap-nom-auteur {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article aside .wrap-auteur .wrap-nom-auteur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin-top: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.4rem;
+  }
+}
+
+.contenu-page .contenu-article aside .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+  padding-right: 0.5em;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1366px) {
+  .contenu-page .contenu-article aside .wrap-auteur .wrap-nom-auteur .auteur-prenom {
+    font-size: 1.7rem;
+    padding-bottom: 0.3em;
+  }
 }
 
 .recette-wrapper {
@@ -665,13 +733,12 @@ header .logo-desktop {
 @media only screen and (min-width: 1366px) {
   .pub-desktop {
     display: block;
-    width: 25%;
   }
 }
 
 .pub-desktop .pub {
-  margin: 1rem 0 1rem 2.4rem;
-  width: 100%;
+  margin-bottom: 4rem;
+  width: 14em;
   max-width: 350px;
   height: 720px;
   font-size: 1.3rem;

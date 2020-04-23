@@ -9,6 +9,13 @@
     
     & .contenu-article {
         background-color: var(--blanc);
+        @include breakpoint(768){
+            position: relative;
+            width: 85vw;
+            margin: 0 auto;
+            top: -120px;
+        }
+
 
         & .wrap-collab {
             position: relative; 
@@ -18,10 +25,22 @@
             padding: 1em 0;
             margin: 0 auto;
             background-color: var(--vert);
+
+            @include breakpoint(768){
+                width: 84%;
+                max-width: 1000px;
+                padding: 0.5em 0;
+                bottom: -30px;
+            }
     
             & .collab {
                 text-align: center;
                 color: var(--blanc);
+            
+                @include breakpoint(768){
+                    padding-left: 1em;
+                    text-align: left;
+                }
             }
         }
      
@@ -30,6 +49,12 @@
             width: 100vw;
             margin: 0 auto;
             padding: 2em 0 0.5em 0;
+
+            @include breakpoint(768){
+                width: 80%;
+                margin-top: 2rem;
+                display: block;
+            }
     
             & .img-auteur {
                 display: none;
@@ -51,8 +76,15 @@
             width: 20em;
             margin: 0 auto;
             text-align: center;
+            @include breakpoint(768){
+                width: 80%;
+                text-align: left;
+            }
             
             & .titre-article {
+                @include breakpoint(768){
+                    font-size: 2.8rem;
+                }
                 font-size: 2rem;
                 font-weight: 100;
             }
@@ -117,41 +149,6 @@
     }
 }
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// BREAKPOINTS
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-@media only screen and (min-width: 768px) {
-    .contenu-article {
-        position: relative;
-        width: 85vw;
-        margin: 0 auto;
-        top: -120px;
-        background-color: rgb(42, 112, 153) !important;
-        
-
-        & .wrap-collab {
-            position: fixed;
-            bottom: -30px;
-
-            & .collab {
-                text-align: left;
-            }
-        }
-
-        & .zone-article {
-            width: 60em;
-        }
-
-        & .titre-article {
-            font-size: 6rem;
-            text-align: left;
-        }
-        
-    }
-
-    
-}
 
 
 

@@ -18,11 +18,15 @@ html {
   margin: 0;
 }
 
-html a {
+html body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html body a {
   text-decoration: none;
 }
 
-html li {
+html body li {
   list-style-type: none;
 }
 
@@ -33,10 +37,6 @@ html li {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
 }
 
 .interface {
@@ -151,6 +151,15 @@ header {
   background-color: var(--blanc);
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article {
+    position: relative;
+    width: 85vw;
+    margin: 0 auto;
+    top: -120px;
+  }
+}
+
 .contenu-page .contenu-article .wrap-collab {
   position: relative;
   width: 50vw;
@@ -161,9 +170,25 @@ header {
   background-color: var(--vert);
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .wrap-collab {
+    width: 84%;
+    max-width: 1000px;
+    padding: 0.5em 0;
+    bottom: -30px;
+  }
+}
+
 .contenu-page .contenu-article .wrap-collab .collab {
   text-align: center;
   color: var(--blanc);
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .wrap-collab .collab {
+    padding-left: 1em;
+    text-align: left;
+  }
 }
 
 .contenu-page .contenu-article .wrap-auteur {
@@ -177,6 +202,14 @@ header {
   width: 100vw;
   margin: 0 auto;
   padding: 2em 0 0.5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .wrap-auteur {
+    width: 80%;
+    margin-top: 2rem;
+    display: block;
+  }
 }
 
 .contenu-page .contenu-article .wrap-auteur .img-auteur {
@@ -206,9 +239,22 @@ header {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .zone-titre {
+    width: 80%;
+    text-align: left;
+  }
+}
+
 .contenu-page .contenu-article .zone-titre .titre-article {
   font-size: 2rem;
   font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenu-page .contenu-article .zone-titre .titre-article {
+    font-size: 2.8rem;
+  }
 }
 
 .contenu-page .contenu-article .zone-titre .titre-section {
@@ -274,30 +320,6 @@ header {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 0.8em;
-}
-
-@media only screen and (min-width: 768px) {
-  .contenu-article {
-    position: relative;
-    width: 85vw;
-    margin: 0 auto;
-    top: -120px;
-    background-color: #2a7099 !important;
-  }
-  .contenu-article .wrap-collab {
-    position: fixed;
-    bottom: -30px;
-  }
-  .contenu-article .wrap-collab .collab {
-    text-align: left;
-  }
-  .contenu-article .zone-article {
-    width: 60em;
-  }
-  .contenu-article .titre-article {
-    font-size: 6rem;
-    text-align: left;
-  }
 }
 
 .recette-wrapper {

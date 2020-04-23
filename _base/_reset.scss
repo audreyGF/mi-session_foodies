@@ -14,11 +14,15 @@ html {
     padding: 0;
     margin: 0;
 
-    & a {
-        text-decoration: none;
+    & body {
+        font-family: 'Roboto', sans-serif;
+
+        & a {
+            text-decoration: none;
+            }
+        & li {
+            list-style-type: none;
         }
-    & li {
-        list-style-type: none;
     }
 }
 

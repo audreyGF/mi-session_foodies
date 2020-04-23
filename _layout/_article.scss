@@ -26,11 +26,10 @@
         }
      
         & .wrap-auteur {
+            @include flex-horizontal;
             width: 100vw;
             margin: 0 auto;
             padding: 2em 0 0.5em 0;
-            display: flex;
-            flex-direction: row;
     
             & .img-auteur {
                 display: none;
@@ -38,8 +37,7 @@
         
             & .wrap-nom-auteur {
                 margin: 0 auto;
-                display: flex;
-                flex-direction: row;
+                @include flex-horizontal;
                 font-size: 0.79em;
     
                 & .auteur-prenom {
@@ -97,8 +95,7 @@
             }
     
             & .paragraph-img-align {
-                display: flex;
-                flex-flow: column nowrap;
+                @include flex-vertical;
                 align-items: center;
     
                 & .paragraph-img {
@@ -145,7 +142,7 @@
         & .zone-article {
             width: 60em;
         }
-        
+
         & .titre-article {
             font-size: 6rem;
             text-align: left;

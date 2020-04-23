@@ -17,8 +17,7 @@
         height: 100%;
 
         & .nav-list {
-            display: flex;
-            flex-flow: column nowrap;
+            @include flex-vertical;
             white-space: nowrap;
             height: 100%;
             

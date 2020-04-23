@@ -3,3 +3,13 @@
 //                     // MIXIN //                     //
 //                     _mixin.scss                     //
 //----------------------------------------------------//
+
+@mixin flex-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@mixin flex-vertical {
+    display: flex;
+    flex-flow: column nowrap;
+}

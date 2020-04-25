@@ -62,7 +62,7 @@
 
             @include breakpoint(1366) {
                 & .nav-lien:hover {
-                    background-color: var(--gris-fonce);
+                    background-color: var(--brun-fonce);
                     transition: all 0.5s;
                 }
                 & .nav-lien:active {

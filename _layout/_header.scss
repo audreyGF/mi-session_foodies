@@ -43,12 +43,17 @@ header {
     justify-content: center;
     
     & .logo-mobile {
-        padding-top: 3px;
+        padding-top: 21px;
         width: 100px;
 
         @include breakpoint(1366) {
             display: none;
         }
-
     }
+    & .logo-mobile:hover {
+        filter: brightness(70%);
+        transition: all 0.2s;
+    }
+
+    
 }

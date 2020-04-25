@@ -21,8 +21,8 @@
             @include flex-horizontal;
             justify-content: center;
             flex-wrap: wrap;
-            width: 75vw;
-            max-width: 75vw;
+            width: 80vw;
+            max-width: 80vw;
             top: -200px;
         }
 
@@ -100,8 +100,8 @@
                         width: 500px;
                     }
                     @include breakpoint(1366){
-                        font-size: 3.2rem;
-                        width: 11em;
+                        font-size: 4rem;
+                        width: 90%;
                     }
                 }
         
@@ -112,7 +112,7 @@
                     font-weight: 700;
 
                     @include breakpoint(1366){
-                        font-size: 1.5rem;
+                        font-size: 1.7rem;
                     }
                 }
             }
@@ -123,7 +123,8 @@
                 padding: 2.5em 0;
                 text-align: center;
                 font-size: 0.8rem;
-                font-weight: 400;
+                font-weight: 500;
+                line-height: 1.8rem;
                 font-style: italic;
     
                 @include breakpoint(768){
@@ -131,13 +132,13 @@
                     font-size: 0.9rem;
                 }
                 @include breakpoint(1366){
-                    font-size: 1rem;
+                    font-size: 1.1rem;
+                    width: 80%;
+                    max-width: 800px;
                 }
             }
         
             & .paragraph {
-                // width: 80vw;
-                // margin: 0 auto;
                 padding: 1.5em 0;
     
                 @include breakpoint(768){
@@ -145,7 +146,7 @@
                 }
         
                 & .soustitre {
-                    padding-bottom: 0.6em;
+                    padding-bottom: 0.7em;
                     font-size: 1.2rem;
                     font-weight: 500;
                     text-align: left;
@@ -153,6 +154,9 @@
     
                     @include breakpoint(768){
                         font-size: 1.6rem;
+                    }
+                    @include breakpoint(1366){
+                        font-size: 1.7rem;
                     }
                 }
         
@@ -163,8 +167,8 @@
                     font-weight: 100;
     
                     @include breakpoint(768){
-                        font-size: 1.1rem;
-                        line-height: 1.8rem;
+                        font-size: 1.25rem;
+                        line-height: 2rem;
                     }
                 }
         

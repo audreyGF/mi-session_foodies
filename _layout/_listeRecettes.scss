@@ -4,38 +4,37 @@
 //                     _listeRecettes.scss            //
 //----------------------------------------------------//
 
-.recette-wrapper {
-    padding-top: 2em;
+    .ligne-recette{
+        display: none;
+        
 
-    @include breakpoint(1366){
-        width: 100%;
-        @include flex-horizontal;
-        justify-content: flex-start;
-    }
-
-    & .ligne-recette{
-        width: 90%;
-        margin: 3rem auto;
-        height: 0.05rem;
-        background-color: var(--gris);
+        @include breakpoint(768){
+            display: block;
+            width: 100%;
+            margin: 5rem auto 2rem auto;
+            height: 0.05rem;
+            background-color: var(--gris);
+        }
 
         @include breakpoint(1366){
             display: none;
         }
     }
 
-    & .recette-list {
-        width: 80vw;
+    .recette-list {
+        width: 80%;
+        padding-top: 2em;
         margin: 0 auto;
         @include flex-vertical;
 
         @include breakpoint(768){
-            width: 80vw;
+            width: 80%;
             @include flex-horizontal;
             justify-content: center;
         }
         @include breakpoint(1366){
             width: 100%;
+            padding-top: 5em;
             @include flex-vertical;
             align-items: flex-start;
         }
@@ -43,46 +42,60 @@
 
         & .recette {
             width: 100%;
+            height: auto;
             margin: 0 auto;
             padding-bottom: 4em;
             @include flex-vertical;
             align-content: center;
 
             @include breakpoint(768){
-                padding: 0 1em;
+                margin: 0 1rem;
             }
 
             @include breakpoint(1366){
                 @include flex-horizontal;
-                justify-content: center;
-                margin-bottom: 5rem;
+                justify-content: flex-start;
+                margin: 0 0 5rem 0;
+                padding: 0;
+                flex-wrap: wrap;
             }
 
             & .recette-image {
                 width: 100%;
 
                 @include breakpoint(1366){
-                    width: 100%;  
-                    
+                    flex: 1;
+                    max-height: 100%;
+                    align-self: flex-start;
                 }
             }
 
             & .info-recettes {
+                @include flex-vertical;
+                align-items: center;
 
                 @include breakpoint(1366){
-                    margin-left: 1rem;
+                    flex: 2;
+                    margin-left: 2rem;
+                    @include flex-vertical;
+                    align-items: flex-start;
+                    
                 }
 
                 & .recette-titre {
                     text-align: center;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     line-height: 1.5rem;
-                    padding-top: 1.5em;
-                    padding-bottom: 1em;
+                    font-weight: 500;
+                    padding: 1.6em 0 1em 0;
+
                     @include breakpoint(1366){
+                        font-size: 1.9rem;
+                        line-height: 1.7rem;
+                        padding: 1em 0 1em 0;
                         font-size: 1.3rem;
                         text-align: left;
-                        text-align-last: left;
+                       
                     }
                     
                 }
@@ -96,8 +109,8 @@
 
                     @include breakpoint(1366){
                         width: 100%;
-                        font-size: 1rem;
-                        line-height: 1.7rem;
+                        font-size: 1.1rem;
+                        line-height: 1.8rem;
                         text-align: left;
                         text-align-last: left;
                     }
@@ -106,20 +119,22 @@
                     width: 200px;
                     margin: 1rem;
                     padding: 0.9em;
-                    align-self: center;
                     font-size: 1rem;
                     font-weight: 700;
                     border: none;
                     border-radius: 0.6em;
                     color: var(--blanc);
                     background-color: var(--vert);
-                    
+
                     @include breakpoint(1366){
-                        width: 170px;
-                        font-size: 0.9rem;
+                        width: 185px;
+                        border-radius: 0.7em;
+                        font-size: 1rem;
+                        padding: 1em;
                         margin: 1rem 0;
                     }
                 }
+
 
                 @include breakpoint(1366){
                     & .recette-bt:hover {
@@ -150,4 +165,4 @@
             
         }
     }
-}
+

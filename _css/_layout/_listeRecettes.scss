@@ -6,7 +6,6 @@
 
     .ligne-recette{
         display: none;
-        
 
         @include breakpoint(768){
             display: block;
@@ -138,8 +137,9 @@
 
                 @include breakpoint(1366){
                     & .recette-bt:hover {
-                        filter: brightness(90%);
+                        background-color: var(--vert-fonce); 
                         transition: 0.3s;
+                        cursor: pointer;
                     }
                     & .recette-bt:active {
                         background-color: var(--gris);

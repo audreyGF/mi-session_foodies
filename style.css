@@ -144,14 +144,20 @@ html body li {
   }
 }
 
+.nav .nav-wrapper .nav-list .nav-lien:hover {
+  width: 85%;
+  background-color: var(--brun-fonce);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav .nav-wrapper .nav-list .nav-lien:active {
+  background-color: var(--orange);
+}
+
 @media only screen and (min-width: 1366px) {
   .nav .nav-wrapper .nav-list .nav-lien:hover {
-    background-color: var(--brun-fonce);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .nav .nav-wrapper .nav-list .nav-lien:active {
-    background-color: var(--orange);
+    width: 100%;
   }
 }
 

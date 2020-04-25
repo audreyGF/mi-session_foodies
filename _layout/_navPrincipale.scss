@@ -60,13 +60,18 @@
 
             }
 
+            & .nav-lien:hover {
+                width: 85%;
+                background-color: var(--brun-fonce);
+                transition: all 0.5s;
+            }
+            & .nav-lien:active {
+                background-color: var(--orange);
+            }
+
             @include breakpoint(1366) {
                 & .nav-lien:hover {
-                    background-color: var(--brun-fonce);
-                    transition: all 0.5s;
-                }
-                & .nav-lien:active {
-                    background-color: var(--orange);
+                    width: 100%
                 }
             }
 

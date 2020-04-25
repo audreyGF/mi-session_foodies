@@ -14,7 +14,8 @@
         "_layout/_article.scss",
         "_layout/_listeRecettes.scss",
         "_layout/_pub.scss",
-        "_layout/_footer.scss"
+        "_layout/_footer.scss",
+        "_animations/_anim.scss"
     ],
     "names": [],
     "file": "style.css"

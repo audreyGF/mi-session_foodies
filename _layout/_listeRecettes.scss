@@ -11,7 +11,6 @@
         width: 100%;
         @include flex-horizontal;
         justify-content: flex-start;
-        margin-left: 3rem;
     }
 
     & .ligne-recette{
@@ -36,6 +35,7 @@
             justify-content: center;
         }
         @include breakpoint(1366){
+            width: 100%;
             @include flex-vertical;
             align-items: flex-start;
         }

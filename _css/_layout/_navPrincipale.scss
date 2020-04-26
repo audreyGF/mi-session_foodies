@@ -4,10 +4,13 @@
 //                     _navPrincipale.scss            //
 //----------------------------------------------------//
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// NAVIGATION (DESKTOP ET OUVERTE MOBILE)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .nav {
     z-index: 19999;
     background-color: var(--noir);
-    position: fixed;
+    position: fixed; // FIXED!
     height: 100vh;
 
     @include breakpoint(1366){
@@ -15,7 +18,7 @@
         height: 70.5px;
     }
 
-    
+    // WRAPPER DU NAV (où les toggleClass se rajoutent)
     & .nav-wrapper {
         width: 300px;
         transition: width 1s;
@@ -26,6 +29,7 @@
             margin: 0;
         }
 
+        // LISTE DES items du nav
         & .nav-list {
             @include flex-vertical;
             white-space: nowrap;
@@ -35,6 +39,7 @@
                 @include flex-horizontal;
             }
             
+            // LIENS entourant les items
             & .nav-lien {
                 padding-left: 2em;
 
@@ -43,6 +48,7 @@
                     align-self: center;
                 }
                 
+                // ITEMS (textes)
                 & .nav-item {
                     padding: 0.7em 0 0.7em 1em;
                     font-size: 1.3rem;
@@ -60,6 +66,7 @@
 
             }
 
+            // EFFETS DE SOURIS des liens
             & .nav-lien:hover {
                 width: 85%;
                 background-color: var(--brun-fonce);
@@ -88,6 +95,9 @@
 
     }
 
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // NAVIGATION FERMÉE
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
     & .nav-wrapper.nav-close {
         width: 0;
 
@@ -97,6 +107,7 @@
     }
 }
 
+// ICÔNE MENU HAMBURGER
 .menu-bars {
     position: absolute;
     z-index: 200000;

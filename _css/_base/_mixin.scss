@@ -4,16 +4,19 @@
 //                     _mixin.scss                     //
 //----------------------------------------------------//
 
+ // Mixin pour flex row
 @mixin flex-horizontal {
     display: flex;
     flex-flow: row nowrap;
 }
 
+// Mixin pour flex column
 @mixin flex-vertical {
     display: flex;
     flex-flow: column nowrap;
 }
 
+// Mixin pour les breakpoints
 @mixin breakpoint($width){
     @media only screen and (min-width: $width+"px"){
         @content;

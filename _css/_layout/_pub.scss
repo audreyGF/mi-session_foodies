@@ -4,6 +4,7 @@
 //                      _pub.scss                     //
 //----------------------------------------------------//
 
+// Classe inactive pour EXTEND 
 .pub-basic {
     background-color: var(--gris-fonce);
     @include flex-horizontal;
@@ -12,7 +13,9 @@
     color: var(--gris);
 }
 
-
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// PUBS VERSION MOBILE & TABLETTE
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .pub-mobile {
     @extend .pub-basic;
     margin: 2rem 0;
@@ -30,6 +33,10 @@
     }
 }
 
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// PUBS VERSION DESKTOP
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .pub-desktop {
     display: none;
 

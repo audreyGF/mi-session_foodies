@@ -4,6 +4,11 @@
 //                     _footer.scss                   //
 //----------------------------------------------------//
 
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// PIED DE PAGE
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 footer {
     width: 100vw;
     height: 100%;
@@ -14,6 +19,7 @@ footer {
         padding: 1.7em 0;
     }
 
+    // TEXTE COPYRIGHT
     & .copyright {
         width: 280px;
         margin: 0 auto;

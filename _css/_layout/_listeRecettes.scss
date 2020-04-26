@@ -4,165 +4,176 @@
 //                     _listeRecettes.scss            //
 //----------------------------------------------------//
 
-    .ligne-recette{
-        display: none;
 
-        @include breakpoint(768){
-            display: block;
-            width: 100%;
-            margin: 5rem auto 2rem auto;
-            height: 0.05rem;
-            background-color: var(--gris);
-        }
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// LIGNE SÉPARATRICE (VERSION TABLETTE)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.ligne-recette{
+    display: none;
 
-        @include breakpoint(1366){
-            display: none;
-        }
+    @include breakpoint(768){
+        display: block;
+        width: 100%;
+        margin: 5rem auto 2rem auto;
+        height: 0.05rem;
+        background-color: var(--gris);
     }
 
-    .recette-list {
+    @include breakpoint(1366){
+        display: none;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// LISTE DE RECETTES
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.recette-list {
+    width: 80%;
+    padding-top: 2em;
+    margin: 0 auto;
+    @include flex-vertical;
+
+    @include breakpoint(768){
         width: 80%;
-        padding-top: 2em;
-        margin: 0 auto;
+        @include flex-horizontal;
+        justify-content: center;
+    }
+    @include breakpoint(1366){
+        width: 100%;
+        padding-top: 5em;
         @include flex-vertical;
+        align-items: flex-start;
+    }
+
+    // RECETTE INDIVIDUELLE
+    & .recette {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 4em;
+        @include flex-vertical;
+        align-content: center;
 
         @include breakpoint(768){
-            width: 80%;
-            @include flex-horizontal;
-            justify-content: center;
+            margin: 0 1rem;
         }
+
         @include breakpoint(1366){
-            width: 100%;
-            padding-top: 5em;
-            @include flex-vertical;
-            align-items: flex-start;
+            @include flex-horizontal;
+            justify-content: flex-start;
+            margin: 0 0 5rem 0;
+            padding: 0;
+            flex-wrap: wrap;
         }
 
-
-        & .recette {
+        & .recette-image {
             width: 100%;
-            height: auto;
-            margin: 0 auto;
-            padding-bottom: 4em;
-            @include flex-vertical;
-            align-content: center;
-
-            @include breakpoint(768){
-                margin: 0 1rem;
-            }
 
             @include breakpoint(1366){
-                @include flex-horizontal;
-                justify-content: flex-start;
-                margin: 0 0 5rem 0;
-                padding: 0;
-                flex-wrap: wrap;
+                flex: 1;
+                max-height: 100%;
+                align-self: flex-start;
             }
+        }
 
-            & .recette-image {
-                width: 100%;
+        // INCLUT TOUTES INFOS DES RECETTES 
+        //(POUR FLEX DESKTOP)
+        & .info-recettes {
+            @include flex-vertical;
+            align-items: center;
 
-                @include breakpoint(1366){
-                    flex: 1;
-                    max-height: 100%;
-                    align-self: flex-start;
-                }
-            }
-
-            & .info-recettes {
+            @include breakpoint(1366){
+                flex: 2;
+                margin-left: 2rem;
                 @include flex-vertical;
-                align-items: center;
+                align-items: flex-start;
+                
+            }
+
+            & .recette-titre {
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                font-weight: 500;
+                padding: 1.6em 0 1em 0;
 
                 @include breakpoint(1366){
-                    flex: 2;
-                    margin-left: 2rem;
-                    @include flex-vertical;
-                    align-items: flex-start;
+                    font-size: 1.9rem;
+                    line-height: 1.7rem;
+                    padding: 1em 0 1em 0;
+                    font-size: 1.3rem;
+                    text-align: left;
                     
                 }
+                
+            }
+            & .recette-p {
+                font-size: 0.85rem;
+                font-weight: 100;
+                line-height: 1.25rem;
+                text-align: justify;
+                text-align-last: center;
+                padding-bottom: 0.5em;
 
-                & .recette-titre {
-                    text-align: center;
-                    font-size: 1.2rem;
-                    line-height: 1.5rem;
-                    font-weight: 500;
-                    padding: 1.6em 0 1em 0;
-
-                    @include breakpoint(1366){
-                        font-size: 1.9rem;
-                        line-height: 1.7rem;
-                        padding: 1em 0 1em 0;
-                        font-size: 1.3rem;
-                        text-align: left;
-                       
-                    }
-                    
+                @include breakpoint(1366){
+                    width: 100%;
+                    font-size: 1.1rem;
+                    line-height: 1.8rem;
+                    text-align: left;
+                    text-align-last: left;
                 }
-                & .recette-p {
-                    font-size: 0.85rem;
-                    font-weight: 100;
-                    line-height: 1.25rem;
-                    text-align: justify;
-                    text-align-last: center;
-                    padding-bottom: 0.5em;
+            }
+            & .recette-bt {
+                width: 200px;
+                margin: 1rem;
+                padding: 0.9em;
+                font-size: 1rem;
+                font-weight: 700;
+                border: none;
+                border-radius: 0.6em;
+                color: var(--blanc);
+                background-color: var(--vert);
 
-                    @include breakpoint(1366){
-                        width: 100%;
-                        font-size: 1.1rem;
-                        line-height: 1.8rem;
-                        text-align: left;
-                        text-align-last: left;
-                    }
-                }
-                & .recette-bt {
-                    width: 200px;
-                    margin: 1rem;
-                    padding: 0.9em;
+                @include breakpoint(1366){
+                    width: 185px;
+                    border-radius: 0.7em;
                     font-size: 1rem;
-                    font-weight: 700;
-                    border: none;
-                    border-radius: 0.6em;
-                    color: var(--blanc);
-                    background-color: var(--vert);
-
-                    @include breakpoint(1366){
-                        width: 185px;
-                        border-radius: 0.7em;
-                        font-size: 1rem;
-                        padding: 1em;
-                        margin: 1rem 0;
-                    }
+                    padding: 1em;
+                    margin: 1rem 0;
                 }
+            }
 
 
-                @include breakpoint(1366){
-                    & .recette-bt:hover {
-                        background-color: var(--vert-fonce); 
-                        transition: 0.3s;
-                        cursor: pointer;
-                    }
-                    & .recette-bt:active {
-                        background-color: var(--gris);
-                    }
+            @include breakpoint(1366){
+                & .recette-bt:hover {
+                    background-color: var(--vert-fonce); 
+                    transition: 0.3s;
+                    cursor: pointer;
                 }
-    
+                & .recette-bt:active {
+                    background-color: var(--gris);
+                }
             }
-            
-        }
-        & .recette:nth-of-type(1)::after, .recette:nth-of-type(2)::after  {
-            content:"";
-            display: inline-block;
-            height: 0.5em;
-            vertical-align: bottom;
-            width: 100%;
-            margin-top: 3rem;
-            margin-right: -100%;
-            border-top: 1px solid var(--gris);
 
-            @include breakpoint(768){
-                display: none;
-            }
-            
         }
+        
     }
+
+    // LIGNES SÉPARATRICES (VERSION MOBILE)
+    & .recette:nth-of-type(1)::after, .recette:nth-of-type(2)::after  {
+        content:"";
+        display: inline-block;
+        height: 0.5em;
+        vertical-align: bottom;
+        width: 100%;
+        margin-top: 3rem;
+        margin-right: -100%;
+        border-top: 1px solid var(--gris);
+
+        @include breakpoint(768){
+            display: none;
+        }
+        
+    }
+}
 
